@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>bg.jpg</file>
+        <file>border.png</file>
+        <file>topPanel.jpg</file>
+        <file>book.jpg</file>
+    </qresource>
+</RCC>
