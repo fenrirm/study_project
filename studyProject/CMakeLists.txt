@@ -25,6 +25,7 @@ set(PROJECT_SOURCES
         secondwindow.cpp
         secondwindow.h
         secondwindow.ui
+        Teacher.h
 
 )
 
