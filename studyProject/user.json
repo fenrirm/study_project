@@ -1,0 +1,39 @@
+[
+    {
+        "marta": {
+            "name": "marta",
+            "pass": "marta",
+            "surname": "marta"
+        }
+    },
+    {
+        "kfjd": {
+            "name": "kfjd",
+            "pass": "kfjd",
+            "surname": "kfjd"
+        }
+    },
+    {
+        "artem": {
+            "name": "artem",
+            "pass": "artem",
+            "surname": "artem"
+        }
+    },
+    {
+        "djfhj": {
+            "name": "djfhj",
+            "pass": "djfhj",
+            "post": "true",
+            "surname": "djfhj"
+        }
+    },
+    {
+        "hhh": {
+            "name": "hhh",
+            "pass": "hhh",
+            "post": "false",
+            "surname": "hhh"
+        }
+    }
+]

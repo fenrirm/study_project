@@ -6,26 +6,19 @@
 #include "./ui_mainwindow.h"
 
 
-user::user(QString nameLine, QString surnameLine, QString idLine,bool is_Teacher, QString password)
+user::user(QString nameLine, QString surnameLine, QString idLine, QString isTeacher, QString password)
 {
-    this->setName(nameLine);
-    this->setSurname(surnameLine);
-    this->setId(idLine);
-    this->setIs_Teacher(is_Teacher);
-    this->setPassword(password);
-}
+    NameLine=nameLine;
+    SurnameLine=surnameLine;
+    IdLine=idLine;
+    IsTeacher=isTeacher;
+    Password=password;
 
-user::user(){
-    this->IdLine =nullptr;
-    this->NameLine=nullptr;
-    this->SurnameLine=nullptr;
-    this->Is_Teacher=NULL;
-    this->Password=nullptr;
 }
 
 void user::setId(QString id)
 {
-    this->IdLine = id;
+    IdLine = id;
 }
 
 QString user::getId()
@@ -33,11 +26,19 @@ QString user::getId()
     return IdLine;
 }
 
+void user::setIsTeacher(QString isTeacher)
+{
+    IsTeacher = isTeacher;
+}
 
+QString user::getIsTeacher()
+{
+    return IsTeacher;
+}
 
 void user::setName(QString nameLine)
 {
-    this->NameLine = nameLine;
+    NameLine = nameLine;
 }
 
 QString user::getName()
@@ -48,26 +49,16 @@ QString user::getName()
 
 void user::setSurname(QString surnameLine)
 {
-    this->SurnameLine = surnameLine;
+    SurnameLine = surnameLine;
 }
 
 QString user::getSurname()
 {
     return SurnameLine;
 }
-void user::setIs_Teacher(bool is_Teacher)
-{
-    this->Is_Teacher = is_Teacher;
-}
-
-bool user::getIs_Teacher()
-{
-    return Is_Teacher;
-}
-
 void user::setPassword(QString password)
 {
-    this->Password = password;
+    Password = password;
 }
 
 QString user::getPassword()
@@ -75,6 +66,33 @@ QString user::getPassword()
     return Password;
 }
 
+//QDataStream &operator>>(QDataStream &in, user &t)
+//{
+//    QString st;
+//    in >> st;
+//    t.NameLine = st;
+//    in >> st;
+//    t.SurnameLine = st;
+//    in >> st;
+//    t.IdLine = st;
+//    in >> st;
+//    t.Id2Line = st;
+//    in >> st;
+//    t.Password = st;
+//    qDebug()<<t.SurnameLine;
+//    return in;
+//}
+
+//QDataStream &operator<<(QDataStream &out, user &t)
+//{
+//    out << t.NameLine<<"\n";
+//    out << t.SurnameLine<<"\n";
+//    out << t.IdLine<<"\n";
+//    out << t.Id2Line<<"\n";
+//    out << t.Password<<"\n";
+//    qDebug()<<t.SurnameLine<<"\n";
+//    return out;
+//}
 
 
 

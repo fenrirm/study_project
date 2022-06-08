@@ -10,7 +10,11 @@
 #include "secondwindow.h"
 #include <QApplication>
 #include <QDataStream>
-#include <QMessageBox>
+#include <QJsonObject>
+#include <QJsonDocument>
+#include <QJsonArray>
+#include <QJsonValue>
+
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -20,6 +24,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->nameLine->setPlaceholderText("Enter your name");
     ui->surnameLine->setPlaceholderText("Enter your surname");
     ui->idLine->setPlaceholderText("Enter your id");
+    //ui->id2Line->setPlaceholderText("Are you a student or a teacher?");
     ui->passwordLine->setPlaceholderText("Enter a password ");
     ui->Id->setPlaceholderText("Enter your Id");
     ui->Password->setPlaceholderText("Enter your pa;ssword");
@@ -30,95 +35,152 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+void MainWindow::createJson(const QString &path)
+
+{
+    QString flag;
+    if(ui->Teacher->isChecked())
+    {
+        flag="true";
+    }
+    else
+    {
+        flag="false";
+    }
+    user u1(ui->nameLine->text(), ui->surnameLine->text(),
+            ui->idLine->text(),flag,ui->passwordLine->text());
+    u1.setName(ui->nameLine->text());
+    u1.setSurname(ui->surnameLine->text());
+    u1.setId(ui->idLine->text());
+    //u1.setSecondId(ui->id2Line->text());
+    u1.setPassword(ui->passwordLine->text());
+    QJsonObject user1;
+    QJsonObject obj;
+    obj.insert("name", u1.getName());
+    obj.insert("surname", u1.getSurname());
+    obj.insert("post", u1.getIsTeacher());
+    obj.insert("pass", u1.getPassword());
+
+    user1.insert(u1.getId(), obj);
+    bool unic= true;
+    QFile f(path);
+    if(f.open(QIODevice::ReadOnly))
+    {
+        qDebug()<<"if1";
+        QByteArray bytes = f.readAll();
+        f.close();
+        QJsonDocument doc (QJsonDocument::fromJson(bytes));
+        QJsonArray arr = doc.array();
+        if(doc.isObject())
+        {
+
+            qDebug()<<"if 2";
+            QJsonObject json = doc.object();
+            foreach(const QString& key, json.keys())
+            {
+                QJsonValue value = json.value(key);
+                if(value==ui->idLine->text())
+                {
+                    unic=false;
+                    qDebug()<<"The user with the same id is already exists!";
+                    return;
+                }
+            }
+    }
+        arr.push_back(user1);
+        QJsonDocument doc2(arr);
+        QFile file (path);
+        if(file.open(QIODevice::WriteOnly))
+        {
+            file.write(doc2.toJson());
+            qDebug()<<"You have succesfully signed up!";
+            file.close();
+        }
+        else
+        {
+            qDebug()<<"file opened failed: ";
+        }
+}
+
+}
+void MainWindow::readJson(const QString &path)
+{
+    QFile file(path);
+    if(file.open(QIODevice::ReadOnly))
+    {
+        QByteArray bytes = file.readAll();
+        file.close();
+        QJsonDocument doc (QJsonDocument::fromJson(bytes));
+        QJsonArray arr= doc.array();
+        foreach(const QJsonValue& value, arr)
+        {
+            QJsonObject obj = value.toObject();
+//            qDebug()<<obj;
+
+            if(obj.keys()[0]==ui->Id->text())
+            {
+                if(obj[obj.keys()[0]].toObject()["pass"].toString()==ui->Password->text() && obj[obj.keys()[0]].toObject()["post"].toString()=="false")
+                {
+                    secondwindow* window = new secondwindow(obj[obj.keys()[0]].toObject()["name"].toString(),
+                            obj[obj.keys()[0]].toObject()["surname"].toString());
+                    qDebug()<<"You have succesfully logged in!";
+                    window->show();
+                    this->close();
+                }
+
+            }
+        }
+    }
+}
+
+
+
 // sign up realization
 void MainWindow::on_signup_clicked()
 {
-    user* u1 =  new user(ui->nameLine->text(),ui->surnameLine->text(),ui->idLine->text(),true,ui->passwordLine->text());
+    QString path = "D:/oop/Qt/studyProject/user.json";
+    createJson(path);
 
-
-
-    bool unic = true;
-
-    user* tmp= new user();
-    QFile file("userDB.txt");
-//read from file
-    if(!file.open(QFile::ReadOnly)){
-        QMessageBox::warning(this,"lul","not open");
-    }else{
-        while(file.read((char*)&tmp,sizeof(user))){
-            QTextStream out(&file);
-            qDebug()<<sizeof(user)<<" ";
-            qDebug()<<tmp->getName()<<" ";
-
-        }
-        file.seek(0);
-        file.close();
-    }
-delete tmp;
-//write to file
-        if(unic){
-            if(!file.open(QFile::WriteOnly)){
-                QMessageBox::warning(this,"lul","not write open");
-            }else{
-                file.write((char*)&u1,sizeof(user));
-                file.flush();
-                file.close();
-            }
-        }
-        file.close();
-    delete u1;
 }
 
 // log in realization
 void MainWindow::on_LogIn_clicked()
 {
-    QFile file;
-    file.setFileName("user.txt");
-//    QFile loginFile;
-//    QFile passwordFile;
-//    loginFile.setFileName("login.txt");
-//    passwordFile.setFileName("password.txt");
-   // secondwindow *window = new secondwindow();
-    bool flag = true;
-    if(file.open(QIODevice::ReadOnly | QIODevice::Text))
-    {
-//        QTextStream readStream(&loginFile);
-//        QTextStream readStream2(&passwordFile);
-        QTextStream readStream(&file);
-        while(!readStream.atEnd() )
-        {
-            QString line, line2;
-            readStream >> line;            
-            if(line==ui->Id->text())
-            { 
-                readStream>>line2;
-                if(line2==ui->Password->text())
-                {
-                    qDebug()<<"You have succesfully logged in!";
-                    //                qDebug()<<"You've succesfully authorized!";
-                    //                window->show();
-                    //                this->close();
-                    flag = false;
-                    break;
-                }
+    QString path = "D:/oop/Qt/studyProject/user.json";
+    readJson(path);
+//    QFile file;
+//    file.setFileName("user.txt");
+//    bool flag = true;
+//    if(file.open(QIODevice::ReadOnly | QIODevice::Text))
+//    {
+//        QTextStream readStream(&file);
+//        while(!readStream.atEnd() )
+//        {
+//            QString line, line2;
+//            readStream >> line;
+//            if(line==ui->Id->text())
+//            {
+//                readStream>>line2;
+//                if(line2==ui->Password->text())
+//                {
+//                    qDebug()<<"You have succesfully logged in!";
+//                                   qDebug()<<"You've succesfully authorized!";
+//                                    window->show();
+//                                   this->close();
+//                    flag = false;
+//                    break;
+//                }
 
-            }
+//            }
 
-        }
-            if (flag)
-        {
-            qDebug()<<"You have entered wrong login or this user doesn't exist!";
-        }
+//        }
+//            if (flag)
+//        {
+//            qDebug()<<"You have entered wrong login or this user doesn't exist!";
+//        }
 
-    }
-    file.close();
-
-//    loginFile.close();
-//    passwordFile.close();
-
-
-
-
+//    }
+//    file.close();
 
 }
 

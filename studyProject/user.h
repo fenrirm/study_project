@@ -8,21 +8,23 @@ private:
     QString NameLine;
     QString SurnameLine;
     QString IdLine;
-    bool Is_Teacher;
+    QString IsTeacher;
     QString Password;
 public:
-    user(QString nameLine, QString surnameLine, QString idLine,bool is_Teacher, QString password );
-    user();
+    user(QString nameLine, QString surnameLine, QString idLine, QString isTeacher, QString password );
     void setId(QString id);
     QString getId();
+    void setIsTeacher(QString isTeacher);
+    QString getIsTeacher();
     void setName(QString name);
     QString getName();
     void setSurname(QString surname);
     QString getSurname();
-    void setIs_Teacher(bool is_Teacher);
-    bool getIs_Teacher();
     void setPassword(QString password);
     QString getPassword();
+//    friend QDataStream &operator>>(QDataStream &in, user &t);
+//    friend QDataStream &operator<<(QDataStream &out, user &t);
+
 };
 
 #endif // USER_H

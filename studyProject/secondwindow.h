@@ -12,7 +12,7 @@ class secondwindow : public QMainWindow
     Q_OBJECT
 
 public:
-    explicit secondwindow(QWidget *parent = nullptr);
+    explicit secondwindow(QString name, QString surname, QWidget *parent = nullptr);
     ~secondwindow();
 
 private:

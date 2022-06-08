@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QString>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -13,11 +14,12 @@ class MainWindow : public QMainWindow
 
 public:
     MainWindow(QWidget *parent = nullptr);
+    void createJson(const QString &path);
+    void readJson(const QString &path);
     ~MainWindow();
 
 private slots:
     void on_signup_clicked();
-
     void on_LogIn_clicked();
 
 private:

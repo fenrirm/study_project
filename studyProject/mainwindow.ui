@@ -83,10 +83,10 @@ color :white;
    <widget class="QGroupBox" name="signUp">
     <property name="geometry">
      <rect>
-      <x>100</x>
+      <x>110</x>
       <y>130</y>
       <width>431</width>
-      <height>541</height>
+      <height>561</height>
      </rect>
     </property>
     <property name="font">
@@ -144,9 +144,9 @@ border -radius: 4px;
      <property name="geometry">
       <rect>
        <x>60</x>
-       <y>50</y>
+       <y>47</y>
        <width>301</width>
-       <height>55</height>
+       <height>78</height>
       </rect>
      </property>
      <layout class="QVBoxLayout" name="verticalLayout">
@@ -186,9 +186,9 @@ color: white;
      <property name="geometry">
       <rect>
        <x>60</x>
-       <y>210</y>
+       <y>220</y>
        <width>301</width>
-       <height>61</height>
+       <height>81</height>
       </rect>
      </property>
      <layout class="QVBoxLayout" name="verticalLayout_5">
@@ -234,119 +234,12 @@ color: white;
      <property name="geometry">
       <rect>
        <x>60</x>
-       <y>280</y>
+       <y>390</y>
        <width>301</width>
-       <height>90</height>
+       <height>81</height>
       </rect>
      </property>
      <layout class="QVBoxLayout" name="verticalLayout_6">
-      <item>
-       <widget class="QLabel" name="id2">
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Ignored" vsizetype="Preferred">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="font">
-         <font>
-          <family>Calibri</family>
-          <pointsize>14</pointsize>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">#id2
-{
-color: white;
-}</string>
-        </property>
-        <property name="text">
-         <string>TeacherOrStudent</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_3">
-        <item>
-         <widget class="QRadioButton" name="radioButton_isTeacher">
-          <property name="enabled">
-           <bool>true</bool>
-          </property>
-          <property name="text">
-           <string>Teacher</string>
-          </property>
-          <property name="checkable">
-           <bool>true</bool>
-          </property>
-          <property name="checked">
-           <bool>false</bool>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QRadioButton" name="radioButton_isStudent">
-          <property name="text">
-           <string>Student</string>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </item>
-     </layout>
-    </widget>
-    <widget class="QWidget" name="layoutWidget">
-     <property name="geometry">
-      <rect>
-       <x>60</x>
-       <y>130</y>
-       <width>301</width>
-       <height>55</height>
-      </rect>
-     </property>
-     <layout class="QVBoxLayout" name="verticalLayout_7">
-      <item>
-       <widget class="QLabel" name="surname">
-        <property name="font">
-         <font>
-          <family>Calibri</family>
-          <pointsize>14</pointsize>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">#surname
-{
-color: white;
-}</string>
-        </property>
-        <property name="text">
-         <string>Surname</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLineEdit" name="surnameLine">
-        <property name="styleSheet">
-         <string notr="true">#surnameLine
-{
-	background-color: rgb(255, 255, 255);
-}</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </widget>
-    <widget class="QWidget" name="layoutWidget">
-     <property name="geometry">
-      <rect>
-       <x>60</x>
-       <y>390</y>
-       <width>301</width>
-       <height>57</height>
-      </rect>
-     </property>
-     <layout class="QVBoxLayout" name="verticalLayout_4">
       <item>
        <widget class="QLabel" name="password">
         <property name="font">
@@ -389,6 +282,92 @@ color: white;
       </item>
      </layout>
     </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>130</y>
+       <width>301</width>
+       <height>78</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_4">
+      <item>
+       <widget class="QLabel" name="surname">
+        <property name="font">
+         <font>
+          <family>Calibri</family>
+          <pointsize>14</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#surname
+{
+color: white;
+}</string>
+        </property>
+        <property name="text">
+         <string>Surname</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="surnameLine">
+        <property name="styleSheet">
+         <string notr="true">#surnameLine
+{
+	background-color: rgb(255, 255, 255);
+}</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>310</y>
+       <width>301</width>
+       <height>78</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_7">
+      <item>
+       <widget class="QLabel" name="label_4">
+        <property name="font">
+         <font>
+          <family>Calibri</family>
+          <pointsize>14</pointsize>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Teacher or student</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QRadioButton" name="Teacher">
+          <property name="text">
+           <string>Teacher</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="Student">
+          <property name="text">
+           <string>Student</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
     <zorder>layoutWidget</zorder>
     <zorder>layoutWidget</zorder>
     <zorder>layoutWidget</zorder>
@@ -399,8 +378,8 @@ color: white;
    <widget class="QGroupBox" name="logIn">
     <property name="geometry">
      <rect>
-      <x>650</x>
-      <y>210</y>
+      <x>660</x>
+      <y>250</y>
       <width>401</width>
       <height>321</height>
      </rect>
