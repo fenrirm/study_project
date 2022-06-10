@@ -8,12 +8,14 @@
 #include <QIODevice>
 #include <QTextStream>
 #include "secondwindow.h"
+#include "teacherwindow.h"
 #include <QApplication>
 #include <QDataStream>
 #include <QJsonObject>
 #include <QJsonDocument>
 #include <QJsonArray>
 #include <QJsonValue>
+#include <QMessageBox>
 
 
 MainWindow::MainWindow(QWidget *parent)
@@ -62,7 +64,7 @@ void MainWindow::createJson(const QString &path)
     obj.insert("pass", u1.getPassword());
 
     user1.insert(u1.getId(), obj);
-    bool unic= true;
+    bool unic = MainWindow::cheackUnic(path,u1.getId());
     QFile f(path);
     if(f.open(QIODevice::ReadOnly))
     {
@@ -73,32 +75,28 @@ void MainWindow::createJson(const QString &path)
         QJsonArray arr = doc.array();
         if(doc.isObject())
         {
-
-            qDebug()<<"if 2";
             QJsonObject json = doc.object();
             foreach(const QString& key, json.keys())
             {
                 QJsonValue value = json.value(key);
-                if(value==ui->idLine->text())
-                {
-                    unic=false;
-                    qDebug()<<"The user with the same id is already exists!";
-                    return;
-                }
             }
-    }
+        }
         arr.push_back(user1);
         QJsonDocument doc2(arr);
         QFile file (path);
-        if(file.open(QIODevice::WriteOnly))
-        {
-            file.write(doc2.toJson());
-            qDebug()<<"You have succesfully signed up!";
-            file.close();
-        }
-        else
-        {
-            qDebug()<<"file opened failed: ";
+        if(unic){
+            if(file.open(QIODevice::WriteOnly))
+            {
+                file.write(doc2.toJson());
+                QMessageBox::about(this,"about","You have succesfully signed up!");
+                file.close();
+            }
+            else
+            {
+                QMessageBox::critical(this,"critical","file opened failed: ");
+            }
+        }else{
+            QMessageBox::critical(this,"critical","The user with the same id is already exists!");
         }
 }
 
@@ -119,10 +117,18 @@ void MainWindow::readJson(const QString &path)
 
             if(obj.keys()[0]==ui->Id->text())
             {
+                //if the studen
                 if(obj[obj.keys()[0]].toObject()["pass"].toString()==ui->Password->text() && obj[obj.keys()[0]].toObject()["post"].toString()=="false")
                 {
                     secondwindow* window = new secondwindow(obj[obj.keys()[0]].toObject()["name"].toString(),
                             obj[obj.keys()[0]].toObject()["surname"].toString());
+                    qDebug()<<"You have succesfully logged in!";
+                    window->show();
+                    this->close();
+                }
+                //if the teacher
+                else if(obj[obj.keys()[0]].toObject()["pass"].toString()==ui->Password->text() && obj[obj.keys()[0]].toObject()["post"].toString()=="true"){
+                    TeacherWindow* window = new TeacherWindow(nullptr);
                     qDebug()<<"You have succesfully logged in!";
                     window->show();
                     this->close();
@@ -133,12 +139,36 @@ void MainWindow::readJson(const QString &path)
     }
 }
 
+bool MainWindow::cheackUnic(const QString &path,QString IDtoCheck)
+{
+    QFile file(path);
+    if(file.open(QIODevice::ReadOnly))
+    {
+        QByteArray bytes = file.readAll();
+        file.close();
+        QJsonDocument doc (QJsonDocument::fromJson(bytes));
+        QJsonArray arr= doc.array();
+        foreach(const QJsonValue& value, arr)
+        {
+            QJsonObject obj = value.toObject();
+//            qDebug()<<obj;
+
+            if(obj.keys()[0] == IDtoCheck)
+            {
+                return false;
+            }
+        }
+
+    }
+    return true;
+}
+
 
 
 // sign up realization
 void MainWindow::on_signup_clicked()
 {
-    QString path = "D:/oop/Qt/studyProject/user.json";
+    QString path = "D:/Study/Term 2/OOOP/study_project/study_project/study_project/studyProject/user.json";
     createJson(path);
 
 }
@@ -146,7 +176,7 @@ void MainWindow::on_signup_clicked()
 // log in realization
 void MainWindow::on_LogIn_clicked()
 {
-    QString path = "D:/oop/Qt/studyProject/user.json";
+    QString path = "D:/Study/Term 2/OOOP/study_project/study_project/study_project/studyProject/user.json";
     readJson(path);
 //    QFile file;
 //    file.setFileName("user.txt");
