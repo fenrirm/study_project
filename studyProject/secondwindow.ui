@@ -25,25 +25,28 @@
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
      <item>
-      <widget class="QLabel" name="name"/>
+      <widget class="QLabel" name="name">
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>14</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+      </widget>
      </item>
      <item>
-      <widget class="QLabel" name="surname"/>
+      <widget class="QLabel" name="surname">
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>14</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
+      </widget>
      </item>
     </layout>
-   </widget>
-   <widget class="QLabel" name="post">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>130</y>
-      <width>221</width>
-      <height>24</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>TextLabel</string>
-    </property>
    </widget>
   </widget>
  </widget>

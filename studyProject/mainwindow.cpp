@@ -27,7 +27,7 @@ MainWindow::MainWindow(QWidget *parent)
     //ui->id2Line->setPlaceholderText("Are you a student or a teacher?");
     ui->passwordLine->setPlaceholderText("Enter a password ");
     ui->Id->setPlaceholderText("Enter your Id");
-    ui->Password->setPlaceholderText("Enter your pa;ssword");
+    ui->Password->setPlaceholderText("Enter your password");
 }
 
 MainWindow::~MainWindow()

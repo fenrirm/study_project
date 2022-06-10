@@ -109,8 +109,8 @@ color: white;
     <widget class="QPushButton" name="signup">
      <property name="geometry">
       <rect>
-       <x>150</x>
-       <y>480</y>
+       <x>140</x>
+       <y>490</y>
        <width>131</width>
        <height>51</height>
       </rect>
@@ -146,7 +146,7 @@ border -radius: 4px;
        <x>60</x>
        <y>47</y>
        <width>301</width>
-       <height>78</height>
+       <height>81</height>
       </rect>
      </property>
      <layout class="QVBoxLayout" name="verticalLayout">
@@ -172,6 +172,12 @@ color: white;
       </item>
       <item>
        <widget class="QLineEdit" name="nameLine">
+        <property name="font">
+         <font>
+          <family>Calibri</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
         <property name="styleSheet">
          <string notr="true">#nameLine
 {
@@ -234,7 +240,7 @@ color: white;
      <property name="geometry">
       <rect>
        <x>60</x>
-       <y>390</y>
+       <y>400</y>
        <width>301</width>
        <height>81</height>
       </rect>
@@ -288,7 +294,7 @@ color: white;
        <x>60</x>
        <y>130</y>
        <width>301</width>
-       <height>78</height>
+       <height>81</height>
       </rect>
      </property>
      <layout class="QVBoxLayout" name="verticalLayout_4">
@@ -314,6 +320,12 @@ color: white;
       </item>
       <item>
        <widget class="QLineEdit" name="surnameLine">
+        <property name="font">
+         <font>
+          <family>Calibri</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
         <property name="styleSheet">
          <string notr="true">#surnameLine
 {
@@ -328,20 +340,26 @@ color: white;
      <property name="geometry">
       <rect>
        <x>60</x>
-       <y>310</y>
+       <y>300</y>
        <width>301</width>
-       <height>78</height>
+       <height>89</height>
       </rect>
      </property>
      <layout class="QVBoxLayout" name="verticalLayout_7">
       <item>
-       <widget class="QLabel" name="label_4">
+       <widget class="QLabel" name="post">
         <property name="font">
          <font>
           <family>Calibri</family>
           <pointsize>14</pointsize>
-          <bold>false</bold>
+          <bold>true</bold>
          </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#post
+{
+color: white;
+}</string>
         </property>
         <property name="text">
          <string>Teacher or student</string>
@@ -352,6 +370,19 @@ color: white;
        <layout class="QHBoxLayout" name="horizontalLayout_2">
         <item>
          <widget class="QRadioButton" name="Teacher">
+          <property name="font">
+           <font>
+            <family>Calibri</family>
+            <pointsize>12</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">#Teacher
+{
+color: white;
+}</string>
+          </property>
           <property name="text">
            <string>Teacher</string>
           </property>
@@ -359,6 +390,19 @@ color: white;
         </item>
         <item>
          <widget class="QRadioButton" name="Student">
+          <property name="font">
+           <font>
+            <family>Calibri</family>
+            <pointsize>12</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">#Student
+{
+color: white;
+}</string>
+          </property>
           <property name="text">
            <string>Student</string>
           </property>
@@ -462,6 +506,12 @@ border -radius: 4px;
       </item>
       <item>
        <widget class="QLineEdit" name="Id">
+        <property name="font">
+         <font>
+          <family>Calibri</family>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
         <property name="styleSheet">
          <string notr="true">background-color: rgb(255, 255, 255);</string>
         </property>
