@@ -16,3 +16,5 @@ secondwindow::~secondwindow()
     delete ui;
 }
 
+
+

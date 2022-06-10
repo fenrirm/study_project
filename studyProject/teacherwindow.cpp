@@ -1,5 +1,6 @@
 #include "teacherwindow.h"
 #include "ui_teacherwindow.h"
+#include "teacher.h"
 
 TeacherWindow::TeacherWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -12,3 +13,10 @@ TeacherWindow::~TeacherWindow()
 {
     delete ui;
 }
+
+void TeacherWindow::on_createClass_clicked()
+{
+
+
+}
+

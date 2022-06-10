@@ -15,6 +15,9 @@ public:
     explicit secondwindow(QString name, QString surname, QWidget *parent = nullptr);
     ~secondwindow();
 
+private slots:
+
+
 private:
     Ui::secondwindow *ui;
 };

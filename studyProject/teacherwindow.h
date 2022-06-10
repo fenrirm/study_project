@@ -15,6 +15,9 @@ public:
     explicit TeacherWindow(QWidget *parent = nullptr);
     ~TeacherWindow();
 
+private slots:
+    void on_createClass_clicked();
+
 private:
     Ui::TeacherWindow *ui;
 };

@@ -25,6 +25,16 @@ set(PROJECT_SOURCES
         secondwindow.cpp
         secondwindow.h
         secondwindow.ui
+        teacherwindow.cpp
+        teacherwindow.h
+        teacherwindow.ui
+        classroom.cpp
+        classroom.h
+        teacher.cpp
+        teacher.h
+        student.cpp
+        student.h
+
 
 )
 

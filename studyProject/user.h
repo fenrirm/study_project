@@ -1,7 +1,7 @@
 #ifndef USER_H
 #define USER_H
 #include <QString>
-#include <QLineEdit>
+
 class user
 {
 private:
@@ -12,6 +12,7 @@ private:
     QString Password;
 public:
     user(QString nameLine, QString surnameLine, QString idLine, QString isTeacher, QString password );
+    user();
     void setId(QString id);
     QString getId();
     void setIsTeacher(QString isTeacher);
@@ -22,8 +23,8 @@ public:
     QString getSurname();
     void setPassword(QString password);
     QString getPassword();
-//    friend QDataStream &operator>>(QDataStream &in, user &t);
-//    friend QDataStream &operator<<(QDataStream &out, user &t);
+    void AddToAClass(int id);
+
 
 };
 

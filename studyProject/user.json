@@ -1,50 +1,10 @@
 [
     {
         "fenrirm": {
-            "name": "Marta",
-            "pass": "1234",
-            "post": "false",
-            "surname": "Shevchenko"
-        }
-    },
-    {
-        "fenrirm": {
             "name": "marta",
             "pass": "1234",
             "post": "false",
-            "surname": "ehjfkhe"
-        }
-    },
-    {
-        "fenrirm": {
-            "name": "mkerf",
-            "pass": "efjd",
-            "post": "false",
-            "surname": "ffn"
-        }
-    },
-    {
-        "fenrirm": {
-            "name": "df",
-            "pass": "efje",
-            "post": "false",
-            "surname": "fef"
-        }
-    },
-    {
-        "fenrirm": {
-            "name": "elemm",
-            "pass": "2943j",
-            "post": "false",
-            "surname": "fejf"
-        }
-    },
-    {
-        "fenrirm": {
-            "name": "fkd",
-            "pass": "dlmkd",
-            "post": "false",
-            "surname": "foejk"
+            "surname": "shevchenko"
         }
     }
 ]
