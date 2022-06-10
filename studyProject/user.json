@@ -1,58 +1,50 @@
 [
     {
-        "artemko": {
-            "name": "artem",
+        "fenrirm": {
+            "name": "Marta",
             "pass": "1234",
             "post": "false",
-            "surname": "pylyp"
+            "surname": "Shevchenko"
         }
     },
     {
-        "qwe": {
-            "name": "qwe",
-            "pass": "qwe",
-            "post": "true",
-            "surname": "qwe"
-        }
-    },
-    {
-        "qweqwe": {
-            "name": "qweqwe",
-            "pass": "qweqwe",
+        "fenrirm": {
+            "name": "marta",
+            "pass": "1234",
             "post": "false",
-            "surname": "qweqwe"
+            "surname": "ehjfkhe"
         }
     },
     {
-        "sad": {
-            "name": "sad",
-            "pass": "asd",
-            "post": "true",
-            "surname": "sadsad"
+        "fenrirm": {
+            "name": "mkerf",
+            "pass": "efjd",
+            "post": "false",
+            "surname": "ffn"
         }
     },
     {
-        "aaa": {
-            "name": "aaa",
-            "pass": "aaa",
-            "post": "true",
-            "surname": "aaa"
+        "fenrirm": {
+            "name": "df",
+            "pass": "efje",
+            "post": "false",
+            "surname": "fef"
         }
     },
     {
-        "ффф": {
-            "name": "ффф",
-            "pass": "ффф",
-            "post": "true",
-            "surname": "ффф"
+        "fenrirm": {
+            "name": "elemm",
+            "pass": "2943j",
+            "post": "false",
+            "surname": "fejf"
         }
     },
     {
-        "ty": {
-            "name": "tyt",
-            "pass": "ty",
-            "post": "true",
-            "surname": "ty"
+        "fenrirm": {
+            "name": "fkd",
+            "pass": "dlmkd",
+            "post": "false",
+            "surname": "foejk"
         }
     }
 ]

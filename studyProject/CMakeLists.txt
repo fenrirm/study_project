@@ -25,9 +25,6 @@ set(PROJECT_SOURCES
         secondwindow.cpp
         secondwindow.h
         secondwindow.ui
-        teacherwindow.h
-        teacherwindow.cpp
-        teacherwindow.ui
 
 )
 

@@ -16,7 +16,6 @@ public:
     MainWindow(QWidget *parent = nullptr);
     void createJson(const QString &path);
     void readJson(const QString &path);
-    bool cheackUnic(const QString &path,QString IDtoCheck);
     ~MainWindow();
 
 private slots:
