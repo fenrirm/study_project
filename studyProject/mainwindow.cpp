@@ -153,7 +153,7 @@ void MainWindow::readJson(const QString &path)
 // sign up realization
 void MainWindow::on_signup_clicked()
 {
-    QString path = "D:/oop/Qt/studyProject/user.json";
+    QString path = "user.json";
     createJson(path);
 
 }
@@ -161,7 +161,7 @@ void MainWindow::on_signup_clicked()
 // log in realization
 void MainWindow::on_LogIn_clicked()
 {
-    QString path = "D:/oop/Qt/studyProject/user.json";
+    QString path = "user.json";
     readJson(path);
 //    QFile file;
 //    file.setFileName("user.txt");
