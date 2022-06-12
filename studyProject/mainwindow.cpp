@@ -15,6 +15,7 @@
 #include <QJsonArray>
 #include <QJsonValue>
 #include <QMessageBox>
+#include "teacherwindow.h"
 
 
 MainWindow::MainWindow(QWidget *parent)
@@ -115,7 +116,6 @@ void MainWindow::readJson(const QString &path)
         {
             QJsonObject obj = value.toObject();
 
-
             if(obj.keys()[0]==ui->Id->text())
             {
                 if(obj[obj.keys()[0]].toObject()["pass"].toString()==ui->Password->text())
@@ -126,27 +126,51 @@ void MainWindow::readJson(const QString &path)
                             obj[obj.keys()[0]].toObject()["surname"].toString());
                     QMessageBox::about(this, "", "You have succesfully logged in");
                     window->show();
+
                     this->close();
+                    file.close();
+                    return;
+
+                    //delete window;
                     }
-                    else
+
+
+                    else /*if( obj[obj.keys()[0]].toObject()["post"].toString()=="true")*/
                     {
+                        TeacherWindow *window2= new TeacherWindow(obj[obj.keys()[0]].toObject()["name"].toString(),
+                                obj[obj.keys()[0]].toObject()["surname"].toString());
+                        QMessageBox::about(this, "", "You nave succesfully logged in");
+                        window2->show();
+
+                        this->close();
+                       file.close();
+                       return;
+
+                        //delete window2;
 
                     }
+
                 }
                 else
                 {
                     QMessageBox::critical(this, "", "You have entered wrong password!");
+                    return;
 
                 }
 
+
             }
-            else
-            {
-                QMessageBox::critical(this, "Critical", "This user doesn't exist or you've entered wrong id");
-            }
+//            else
+//            {
+//                QMessageBox::critical(this, "", "This user doesn't exist or you've entered wrong id");
+//            }
 
         }
+        QMessageBox::critical(this, "", "This user doesn't exist or you've entered wrong id");
+
+
     }
+
 }
 
 bool MainWindow::cheackUnic(const QString &path,QString IDtoCheck)

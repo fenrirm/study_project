@@ -3,16 +3,19 @@
 #include <QString>
 
 
-class AbstractClassroom
+class Classroom
 {
 private:
-    int id;
+    QString id;
     QString name;
 
-
-
 public:
-    AbstractClassroom();
+    Classroom(QString Id, QString Name);
+    void setId(QString Id);
+    QString getId();
+    void setName(QString Name);
+    QString getName();
+
 };
 
 

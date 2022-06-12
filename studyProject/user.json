@@ -6,5 +6,21 @@
             "post": "false",
             "surname": "shevchenko"
         }
+    },
+    {
+        "karaMarg": {
+            "name": "Karina",
+            "pass": "1111",
+            "post": "true",
+            "surname": "Margaryan"
+        }
+    },
+    {
+        "qwery": {
+            "name": "artem",
+            "pass": "0000",
+            "post": "false",
+            "surname": "pylypenko"
+        }
     }
 ]
