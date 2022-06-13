@@ -23,21 +23,41 @@ background-image: url(:/images/bg.jpg);
    <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>70</x>
-      <y>250</y>
+      <x>30</x>
+      <y>220</y>
       <width>191</width>
       <height>131</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
      <item>
-      <widget class="QLineEdit" name="nameClassLine"/>
+      <widget class="QLineEdit" name="nameClassLine">
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+      </widget>
      </item>
      <item>
-      <widget class="QLineEdit" name="idClassLine"/>
+      <widget class="QLineEdit" name="idClassLine">
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+      </widget>
      </item>
      <item>
       <widget class="QPushButton" name="createClass">
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>Create a class</string>
        </property>
@@ -57,6 +77,12 @@ background-image: url(:/images/bg.jpg);
     <layout class="QVBoxLayout" name="verticalLayout_2">
      <item>
       <widget class="QLabel" name="teacher">
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>Teacher</string>
        </property>
@@ -64,6 +90,12 @@ background-image: url(:/images/bg.jpg);
      </item>
      <item>
       <widget class="QLabel" name="name">
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string/>
        </property>
@@ -71,6 +103,12 @@ background-image: url(:/images/bg.jpg);
      </item>
      <item>
       <widget class="QLabel" name="surname">
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string/>
        </property>
@@ -83,9 +121,18 @@ background-image: url(:/images/bg.jpg);
      <rect>
       <x>420</x>
       <y>50</y>
-      <width>441</width>
-      <height>411</height>
+      <width>491</width>
+      <height>491</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Calibri</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
     </property>
     <widget class="QWidget" name="tab">
      <attribute name="title">
