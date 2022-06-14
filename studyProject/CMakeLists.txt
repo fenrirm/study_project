@@ -34,7 +34,10 @@ set(PROJECT_SOURCES
         teacher.h
         student.cpp
         student.h
-
+        userfile.cpp
+        userfile.h
+        fileclass.cpp
+        fileclass.h
 
 )
 
