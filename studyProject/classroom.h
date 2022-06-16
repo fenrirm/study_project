@@ -2,7 +2,9 @@
 #define CLASSROOM_H
 #pragma once
 #include <QString>
-
+#include <QVector>
+#include <QPair>
+#include "user.h"
 
 class Classroom
 {

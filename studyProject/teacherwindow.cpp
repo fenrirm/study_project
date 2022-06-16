@@ -10,7 +10,6 @@ TeacherWindow::TeacherWindow(QString id, QString name, QString surname, QWidget 
     ui->id->setText(id);
     ui->name->setText(name);
     ui->surname->setText(surname);
-    ui->idClassLine->setPlaceholderText("Enter an id of a class");
     ui->nameClassLine->setPlaceholderText("Enter a name of a class");
 }
 
@@ -22,7 +21,7 @@ TeacherWindow::~TeacherWindow()
 
 void TeacherWindow::on_createClass_clicked()
 {
-   Classroom classroom(ui->idClassLine->text(), ui->nameClassLine->text());
+   Classroom classroom(ui->id->text(), ui->nameClassLine->text());
    classroom.setId(ui->id->text());
    classroom.setName(ui->nameClassLine->text());
    user u(nullptr,nullptr,nullptr,nullptr,nullptr);
