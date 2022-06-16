@@ -215,15 +215,18 @@ void MainWindow::on_signup_clicked()
     u1.setSurname(ui->surnameLine->text());
     u1.setId(ui->idLine->text());
     u1.setPassword(ui->passwordLine->text());
-
+    Classroom classroom1(nullptr, nullptr);
+    classroom1.setId(nullptr);
+    classroom1.setName(nullptr);
+    userfile writeuser;
+    writeuser.writeToFile(path, this, u1, classroom1);
 }
 
 // log in realization
 void MainWindow::on_LogIn_clicked()
 {
     QString path = "D:/oop/Qt/studyProject/user.json";
-    userfile readfile;
-    //readJson(path);
-
+    userfile readuser;
+    readuser.readFromFile(path, this, ui->Id->text(),ui->Password->text());
 }
 

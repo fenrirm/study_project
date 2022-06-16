@@ -30,14 +30,17 @@ set(PROJECT_SOURCES
         teacherwindow.ui
         classroom.cpp
         classroom.h
-        teacher.cpp
-        teacher.h
-        student.cpp
-        student.h
         userfile.cpp
         userfile.h
-        fileclass.cpp
+        classroomfile.cpp
+        classroomfile.h
         fileclass.h
+        task.h
+        task.cpp
+        testtask.h
+        testtask.cpp
+        answertask.h
+        answertask.cpp
 
 )
 

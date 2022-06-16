@@ -22,5 +22,13 @@
             "post": "false",
             "surname": "pylypenko"
         }
+    },
+    {
+        "kotocat": {
+            "name": "stepan",
+            "pass": "kotocat",
+            "post": "false",
+            "surname": "ilchuk"
+        }
     }
 ]
