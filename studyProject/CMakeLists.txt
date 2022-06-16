@@ -41,10 +41,6 @@ set(PROJECT_SOURCES
         fileclass.h
         task.h
         task.cpp
-        answertask.h
-        answertask.cpp
-        testtask.h
-        testtask.cpp
 
 )
 

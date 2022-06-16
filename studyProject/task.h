@@ -1,13 +1,14 @@
 #ifndef TASK_H
 #define TASK_H
 #include <QString>
-
+#include <vector>
 class Task
 {
 private:
     QString type;
     QString IDClass;
     QString IDTeacher;
+
 public:
     Task();
 
