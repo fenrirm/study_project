@@ -1,9 +1,7 @@
 #include "user.h"
 
-user::user()
-{
 
-}
+
 
 user::user(QString nameLine, QString surnameLine, QString idLine, QString isTeacher, QString password)
 {
