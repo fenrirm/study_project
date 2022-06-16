@@ -1,7 +1,7 @@
 #ifndef USER_H
 #define USER_H
 #include <QString>
-
+#pragma once
 class user
 {
 private:

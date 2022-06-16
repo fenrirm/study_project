@@ -1,6 +1,6 @@
 #ifndef STUDENT_H
 #define STUDENT_H
-
+#pragma once
 
 class student
 {

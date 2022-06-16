@@ -68,10 +68,10 @@ background-image: url(:/images/bg.jpg);
    <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>40</y>
-      <width>141</width>
-      <height>151</height>
+      <x>30</x>
+      <y>30</y>
+      <width>181</width>
+      <height>161</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -80,7 +80,7 @@ background-image: url(:/images/bg.jpg);
        <property name="font">
         <font>
          <family>Calibri</family>
-         <pointsize>11</pointsize>
+         <pointsize>14</pointsize>
         </font>
        </property>
        <property name="text">
@@ -89,11 +89,24 @@ background-image: url(:/images/bg.jpg);
       </widget>
      </item>
      <item>
+      <widget class="QLabel" name="id">
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
       <widget class="QLabel" name="name">
        <property name="font">
         <font>
          <family>Calibri</family>
-         <pointsize>11</pointsize>
+         <pointsize>14</pointsize>
         </font>
        </property>
        <property name="text">
@@ -106,7 +119,7 @@ background-image: url(:/images/bg.jpg);
        <property name="font">
         <font>
          <family>Calibri</family>
-         <pointsize>11</pointsize>
+         <pointsize>14</pointsize>
         </font>
        </property>
        <property name="text">
@@ -115,35 +128,6 @@ background-image: url(:/images/bg.jpg);
       </widget>
      </item>
     </layout>
-   </widget>
-   <widget class="QTabWidget" name="tabWidget">
-    <property name="geometry">
-     <rect>
-      <x>420</x>
-      <y>50</y>
-      <width>491</width>
-      <height>491</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Calibri</family>
-      <pointsize>11</pointsize>
-     </font>
-    </property>
-    <property name="currentIndex">
-     <number>0</number>
-    </property>
-    <widget class="QWidget" name="tab">
-     <attribute name="title">
-      <string>Tab 1</string>
-     </attribute>
-    </widget>
-    <widget class="QWidget" name="tab_2">
-     <attribute name="title">
-      <string>Tab 2</string>
-     </attribute>
-    </widget>
    </widget>
   </widget>
  </widget>

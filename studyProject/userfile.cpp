@@ -4,6 +4,7 @@ userfile::userfile()
 {
 
 }
+
 bool userfile::checkUnic(const QString &path,QString IDtoCheck)
 {
     QFile file(path);
@@ -25,7 +26,7 @@ bool userfile::checkUnic(const QString &path,QString IDtoCheck)
     }
     return true;
 }
-void userfile::writeToFile(QString& path,  MainWindow* mainwindow, user u1)
+void userfile::writeToFile(QString& path,  MainWindow* mainwindow, user u1, Classroom classroom1)
 {
     QJsonObject user1;
     QJsonObject obj;
@@ -78,6 +79,8 @@ void userfile::readFromFile(QString& path,  MainWindow* mainwindow, QString id, 
     QFile file(path);
     if(file.open(QIODevice::ReadOnly))
     {
+        secondwindow* window;
+        TeacherWindow* window2;
         QByteArray bytes = file.readAll();
         file.close();
         QJsonDocument doc (QJsonDocument::fromJson(bytes));
@@ -91,7 +94,8 @@ void userfile::readFromFile(QString& path,  MainWindow* mainwindow, QString id, 
                 {
                     if( obj[obj.keys()[0]].toObject()["post"].toString()=="false")
                     {
-                        secondwindow* window = new secondwindow(obj[obj.keys()[0]].toObject()["name"].toString(),
+                        window = new secondwindow(obj.keys()[0],
+                                obj[obj.keys()[0]].toObject()["name"].toString(),
                         obj[obj.keys()[0]].toObject()["surname"].toString());
                         QMessageBox::about(mainwindow, "", "You have succesfully logged in");
                         window->show();
@@ -101,7 +105,8 @@ void userfile::readFromFile(QString& path,  MainWindow* mainwindow, QString id, 
                     }
                     else
                     {
-                        TeacherWindow *window2= new TeacherWindow(obj[obj.keys()[0]].toObject()["name"].toString(),
+                        window2= new TeacherWindow(obj.keys()[0],
+                                obj[obj.keys()[0]].toObject()["name"].toString(),
                         obj[obj.keys()[0]].toObject()["surname"].toString());
                         QMessageBox::about(mainwindow, "", "You nave succesfully logged in");
                         window2->show();
@@ -109,14 +114,19 @@ void userfile::readFromFile(QString& path,  MainWindow* mainwindow, QString id, 
                         file.close();
                         return;
                     }
+                    delete window2;
                 }
+
                 else
                 {
                     QMessageBox::critical(mainwindow, "", "You have entered wrong password!");
                     return;
                 }
             }
+            delete window;
+
         }
         QMessageBox::critical(mainwindow, "", "This user doesn't exist or you've entered wrong id");
+
     }
 }
