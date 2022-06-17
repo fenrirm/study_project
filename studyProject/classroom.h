@@ -18,7 +18,6 @@ public:
     QString getId();
     void setName(QString Name);
     QString getName();
-
 };
 
 

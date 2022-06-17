@@ -1,13 +1,14 @@
 [
     {
-        "1": {
-            "id": "1",
-            "name": "algebra"
-        }
-    },
-    {
-        "karaMarg": {
-            "name": "geometry"
+        "marta": {
+            "name": "algebra",
+            "studentsId": [
+                0,
+                "karina",
+                "karina",
+                "karina",
+                "karina"
+            ]
         }
     }
 ]

@@ -26,11 +26,74 @@ bool classroomfile::checkUnic(const QString &path,QString nameToCheck)
     }
     return true;
 }
+
+void classroomfile::addStudent(QString& path, secondwindow* studentwindow, QString teacherId, QString name, QString studentId)
+{
+    QFile file(path);
+    if(file.open(QIODevice::ReadOnly))
+    {
+        QByteArray bytes = file.readAll();
+        file.close();
+        QJsonDocument doc (QJsonDocument::fromJson(bytes));
+        QJsonArray arr= doc.array();
+        for(int i=0; i<arr.size(); i++)
+        {
+            QJsonObject obj = arr[i].toObject();
+            //qDebug()<<obj.keys()[0];
+            //qDebug()<<teacherId;
+            qDebug()<<obj[obj.keys()[0]].toObject()["name"].toString();
+            qDebug()<<name;
+            if(obj.keys()[0]==teacherId)
+            {
+                if(obj[obj.keys()[0]].toObject()["name"].toString()==name)
+                {
+
+                     QJsonObject obj2 = obj[obj.keys()[0]].toObject();
+                     QJsonArray ids=obj2["studentsId"].toArray();
+                     ids.push_back(studentId);
+                     obj2["studentsId"]=ids;
+                     obj[obj.keys()[0]] = obj2;
+                     arr[i] = obj;
+                     break;
+                }
+                else
+                {
+                    qDebug()<<"wrong classroom name";
+                    break;
+                }
+            }
+            else
+            {
+                qDebug()<<"wrong classroom id";
+
+            }
+
+        }
+        QJsonDocument doc2(arr);
+        if(file.open(QIODevice::WriteOnly))
+        {
+            file.write(doc2.toJson());
+            file.close();
+        }
+        else
+        {
+            qDebug()<<"file opened failed";
+        }
+    }
+
+
+}
+
 void classroomfile::writeToFile(QString& path,  TeacherWindow* mainwindow, user u1, Classroom classroom1)
 {
     QJsonObject classroom;
     QJsonObject obj;
+    QJsonArray ids;
+    ids.push_back(0);
+    QString array[100];
+    array[0]="";
     obj.insert("name",classroom1.getName());
+    obj.insert("studentsId", ids);
     classroom.insert(classroom1.getId(), obj);
     bool unic = checkUnic(path,classroom1.getName());
     QFile f(path);

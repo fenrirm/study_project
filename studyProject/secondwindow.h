@@ -18,6 +18,8 @@ public:
 private slots:
 
 
+    void on_connectToClass_clicked();
+
 private:
     Ui::secondwindow *ui;
 };

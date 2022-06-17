@@ -38,5 +38,21 @@
             "post": "true",
             "surname": "Chupylko"
         }
+    },
+    {
+        "marta": {
+            "name": "marta",
+            "pass": "marta",
+            "post": "true",
+            "surname": "marta"
+        }
+    },
+    {
+        "karina": {
+            "name": "karina",
+            "pass": "karina",
+            "post": "false",
+            "surname": "karina"
+        }
     }
 ]

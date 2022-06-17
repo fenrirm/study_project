@@ -1,6 +1,7 @@
 #include "secondwindow.h"
 #include "qdebug.h"
 #include "ui_secondwindow.h"
+#include "classroomfile.h"
 
 secondwindow::secondwindow(QString id, QString name, QString surname, QWidget *parent) :
     QMainWindow(parent),
@@ -18,4 +19,12 @@ secondwindow::~secondwindow()
 }
 
 
+
+
+void secondwindow::on_connectToClass_clicked()
+{
+    classroomfile student;
+    QString path="D:/oop/Qt/studyProject/classroom.json";
+    student.addStudent(path, this, ui->teacherId->text(), ui->classroomName->text(), ui->id->text());
+}
 
