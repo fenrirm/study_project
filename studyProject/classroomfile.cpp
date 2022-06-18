@@ -84,7 +84,7 @@ void classroomfile::addStudent(QString& path, secondwindow* studentwindow, QStri
 
 }
 
-void classroomfile::writeToFile(QString& path,  TeacherWindow* mainwindow, user u1, Classroom classroom1)
+void classroomfile::writeToFile(QString& path, MainWindow* mainwindow, TeacherWindow* teacherwindow, user u1, Classroom classroom1)
 {
     QJsonObject classroom;
     QJsonObject obj;
@@ -119,18 +119,19 @@ void classroomfile::writeToFile(QString& path,  TeacherWindow* mainwindow, user 
            if(file.open(QIODevice::WriteOnly))
            {
                file.write(doc2.toJson());
-               QMessageBox::about(mainwindow,"","You have succesfully created the class!");
+               QMessageBox::about(teacherwindow,"","You have succesfully created the class!");
                file.close();
            }
            else
            {
-               QMessageBox::critical(mainwindow,"","file opened failed: ");
+               QMessageBox::critical(teacherwindow,"","file opened failed: ");
            }
        }else
        {
-           QMessageBox::critical(mainwindow,"","The class with the same name is already exists!");
+           QMessageBox::critical(teacherwindow,"","The class with the same name is already exists!");
        }
     }
 }
+
 
 

@@ -13,12 +13,12 @@
 #include "teacherwindow.h"
 #include "secondwindow.h"
 
-class classroomfile
+class classroomfile: public fileclass
 {
 public:
     classroomfile();
-    void writeToFile(QString& path,  TeacherWindow* mainwindow, user u1, Classroom classroom1) ;
-    void readFromFile(QString& path, TeacherWindow* mainwindow, QString id, QString pass);
+    void writeToFile(QString& path, MainWindow* mainwindow, TeacherWindow* teacherwindow, user u1, Classroom classroom1) override;
+    void readFromFile(QString& path, MainWindow* mainwindow,TeacherWindow* teacherwindow, QString id, QString pass) ;
     bool checkUnic(const QString &path, QString nameToCheck);
     void addStudent(QString& path, secondwindow* studentwindow, QString teacherId, QString name, QString studentId);
 };

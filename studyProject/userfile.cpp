@@ -26,7 +26,7 @@ bool userfile::checkUnic(const QString &path,QString IDtoCheck)
     }
     return true;
 }
-void userfile::writeToFile(QString& path,  MainWindow* mainwindow, user u1, Classroom classroom1)
+void userfile::writeToFile(QString& path,  MainWindow* mainwindow, TeacherWindow* teacherwindow, user u1, Classroom classroom1)
 {
     QJsonObject user1;
     QJsonObject obj;
@@ -74,7 +74,7 @@ void userfile::writeToFile(QString& path,  MainWindow* mainwindow, user u1, Clas
 }
 
 
-void userfile::readFromFile(QString& path,  MainWindow* mainwindow, QString id, QString pass)
+void userfile::readFromFile(QString& path,  MainWindow* mainwindow,TeacherWindow* teacherwindow, QString id, QString pass)
 {
     QFile file(path);
     if(file.open(QIODevice::ReadOnly))

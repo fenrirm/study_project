@@ -20,6 +20,8 @@ private slots:
 
     void on_connectToClass_clicked();
 
+    void on_logOut_clicked();
+
 private:
     Ui::secondwindow *ui;
 };

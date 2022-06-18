@@ -29,6 +29,8 @@ private slots:
 
     void on_createTask_clicked();
 
+    void on_logout_clicked();
+
 private:
     Ui::TeacherWindow *ui;
 };
