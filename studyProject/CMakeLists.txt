@@ -41,6 +41,21 @@ set(PROJECT_SOURCES
         fileclass.h
         task.h
         task.cpp
+        question.h
+        question.cpp
+        test.h
+        test.cpp
+        answer.h
+        answer.cpp
+        createtaskwindow.h
+        createtaskwindow.cpp
+        createtaskwindow.ui
+        questionfactory.h
+        questionfactory.cpp
+        testfactory.h
+        testfactory.cpp
+        ansfactory.h
+        ansfactory.cpp
 
 )
 

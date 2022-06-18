@@ -2,13 +2,15 @@
 #define TASK_H
 #include <QString>
 #include <vector>
+#include "question.h"
+
 class Task
 {
 private:
     QString type;
     QString IDClass;
     QString IDTeacher;
-
+    std::vector<Question> questionList;
 public:
     Task();
 

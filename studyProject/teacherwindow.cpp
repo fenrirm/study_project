@@ -1,6 +1,6 @@
 #include "teacherwindow.h"
 #include "classroomfile.h"
-
+#include "createtaskwindow.h"
 
 TeacherWindow::TeacherWindow(QString id, QString name, QString surname, QWidget *parent) :
     QMainWindow(parent),
@@ -33,5 +33,13 @@ void TeacherWindow::on_createClass_clicked()
    QString path="D:/oop/Qt/studyProject/classroom.json";
    classroomfile writeclassroom;
    writeclassroom.writeToFile(path, this, u, classroom);
+}
+
+
+void TeacherWindow::on_createClass_2_clicked()
+{
+    CreateTaskWindow* taskCreateWindow = new CreateTaskWindow(nullptr);
+    taskCreateWindow->show();
+    this->close();
 }
 
