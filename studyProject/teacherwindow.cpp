@@ -1,6 +1,10 @@
 #include "teacherwindow.h"
 #include "classroomfile.h"
 #include "createtaskwindow.h"
+#include "task.h"
+#include "questionfactory.h"
+#include "testfactory.h"
+#include "ansfactory.h"
 
 TeacherWindow::TeacherWindow(QString id, QString name, QString surname, QWidget *parent) :
     QMainWindow(parent),
@@ -30,15 +34,29 @@ void TeacherWindow::on_createClass_clicked()
    u.setId(nullptr);
    u.setIsTeacher(nullptr);
    u.setPassword(nullptr);
-   QString path="D:/oop/Qt/studyProject/classroom.json";
+   QString path="D:/Study/Term 2/OOOP/project/study_project/studyProject/classroom.json";
    classroomfile writeclassroom;
    writeclassroom.writeToFile(path, this, u, classroom);
 }
 
 
-void TeacherWindow::on_createClass_2_clicked()
+
+
+
+void TeacherWindow::on_createTask_clicked()
 {
-    CreateTaskWindow* taskCreateWindow = new CreateTaskWindow(nullptr);
+    QString type;
+
+    if(ui->radioButton_type1->isChecked()){
+        type="1";
+
+    }else  if(ui->radioButton_type2->isChecked()){
+        type="2";
+    }
+
+    Task* newTask = new Task(type,ui->id->text(),ui->lineEditClassroom->text(),ui->lineEditTask->text());
+
+    CreateTaskWindow* taskCreateWindow = new CreateTaskWindow(*newTask,nullptr);
     taskCreateWindow->show();
     this->close();
 }

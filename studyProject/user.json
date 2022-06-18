@@ -54,5 +54,13 @@
             "post": "false",
             "surname": "karina"
         }
+    },
+    {
+        "qwerty": {
+            "name": "qwerty",
+            "pass": "qwerty",
+            "post": "true",
+            "surname": "qwerty"
+        }
     }
 ]

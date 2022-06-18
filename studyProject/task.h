@@ -8,19 +8,23 @@ class Task
 {
 private:
     QString type;
-    QString IDClass;
+    QString name;
+    QString ClassName;
     QString IDTeacher;
-    std::vector<Question> questionList;
+    std::vector<Question*> questionList;
+    QString theoryLink;
 public:
     Task();
+    Task(QString,QString,QString,QString);
 
     QString getType();
     QString getIDClass();
     QString getIDTeacher();
 
     void setType(QString taskType);
-    void setIDClass(QString classID);
+    void setClassName(QString classID);
     void setIDTeacher(QString teacherID);
+    void pushQusetion(Question*);
 };
 
 #endif // TASK_H

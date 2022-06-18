@@ -9,7 +9,6 @@
 class TestFactory:public QuestionFactory
 {
 public:
-    TestFactory();
     Question* createQuestion(QString,int) override;
 };
 

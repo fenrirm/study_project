@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>641</width>
-    <height>512</height>
+    <height>433</height>
    </rect>
   </property>
   <property name="maximumSize">
@@ -44,7 +44,7 @@
       <property name="geometry">
        <rect>
         <x>0</x>
-        <y>0</y>
+        <y>-758</y>
         <width>600</width>
         <height>1167</height>
        </rect>
@@ -60,35 +60,35 @@
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_2">
         <item>
-         <widget class="QLineEdit" name="lineEditTest1_2"/>
+         <widget class="QLineEdit" name="lineEditTest2"/>
         </item>
         <item>
          <layout class="QHBoxLayout" name="horizontalLayout_2">
           <item>
-           <widget class="QRadioButton" name="radioButton_5">
+           <widget class="QRadioButton" name="radioButton2_1">
             <property name="text">
-             <string>RadioButton</string>
+             <string>Answer 1</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QRadioButton" name="radioButton_6">
+           <widget class="QRadioButton" name="radioButton2_2">
             <property name="text">
-             <string>RadioButton</string>
+             <string>Answer 2</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QRadioButton" name="radioButton_7">
+           <widget class="QRadioButton" name="radioButton2_3">
             <property name="text">
-             <string>RadioButton</string>
+             <string>Answer 3</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QRadioButton" name="radioButton_8">
+           <widget class="QRadioButton" name="radioButton2_4">
             <property name="text">
-             <string>RadioButton</string>
+             <string>Answer 4</string>
             </property>
            </widget>
           </item>
@@ -107,35 +107,35 @@
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_3">
         <item>
-         <widget class="QLineEdit" name="lineEditTest1_3"/>
+         <widget class="QLineEdit" name="lineEditTest3"/>
         </item>
         <item>
          <layout class="QHBoxLayout" name="horizontalLayout_3">
           <item>
-           <widget class="QRadioButton" name="radioButton_9">
+           <widget class="QRadioButton" name="radioButton3_1">
             <property name="text">
-             <string>RadioButton</string>
+             <string>Answer 1</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QRadioButton" name="radioButton_10">
+           <widget class="QRadioButton" name="radioButton3_2">
             <property name="text">
-             <string>RadioButton</string>
+             <string>Answer 2</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QRadioButton" name="radioButton_11">
+           <widget class="QRadioButton" name="radioButton3_3">
             <property name="text">
-             <string>RadioButton</string>
+             <string>Answer 3</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QRadioButton" name="radioButton_12">
+           <widget class="QRadioButton" name="radioButton3_4">
             <property name="text">
-             <string>RadioButton</string>
+             <string>Answer 4</string>
             </property>
            </widget>
           </item>
@@ -154,35 +154,35 @@
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_4">
         <item>
-         <widget class="QLineEdit" name="lineEditTest1_4"/>
+         <widget class="QLineEdit" name="lineEditTest4"/>
         </item>
         <item>
          <layout class="QHBoxLayout" name="horizontalLayout_4">
           <item>
-           <widget class="QRadioButton" name="radioButton_13">
+           <widget class="QRadioButton" name="radioButton4_1">
             <property name="text">
-             <string>RadioButton</string>
+             <string>Answer 1</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QRadioButton" name="radioButton_14">
+           <widget class="QRadioButton" name="radioButton4_2">
             <property name="text">
-             <string>RadioButton</string>
+             <string>Answer 2</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QRadioButton" name="radioButton_15">
+           <widget class="QRadioButton" name="radioButton4_3">
             <property name="text">
-             <string>RadioButton</string>
+             <string>Answer 3</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QRadioButton" name="radioButton_16">
+           <widget class="QRadioButton" name="radioButton4_4">
             <property name="text">
-             <string>RadioButton</string>
+             <string>Answer 4</string>
             </property>
            </widget>
           </item>
@@ -201,35 +201,35 @@
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_5">
         <item>
-         <widget class="QLineEdit" name="lineEditTest1_5"/>
+         <widget class="QLineEdit" name="lineEditTest5"/>
         </item>
         <item>
          <layout class="QHBoxLayout" name="horizontalLayout_5">
           <item>
-           <widget class="QRadioButton" name="radioButton_17">
+           <widget class="QRadioButton" name="radioButton5_1">
             <property name="text">
-             <string>RadioButton</string>
+             <string>Answer 1</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QRadioButton" name="radioButton_18">
+           <widget class="QRadioButton" name="radioButton5_2">
             <property name="text">
-             <string>RadioButton</string>
+             <string>Answer 2</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QRadioButton" name="radioButton_19">
+           <widget class="QRadioButton" name="radioButton5_3">
             <property name="text">
-             <string>RadioButton</string>
+             <string>Answer 3</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QRadioButton" name="radioButton_20">
+           <widget class="QRadioButton" name="radioButton5_4">
             <property name="text">
-             <string>RadioButton</string>
+             <string>Answer 4</string>
             </property>
            </widget>
           </item>
@@ -248,35 +248,35 @@
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_6">
         <item>
-         <widget class="QLineEdit" name="lineEditTest1_6"/>
+         <widget class="QLineEdit" name="lineEditTest6"/>
         </item>
         <item>
          <layout class="QHBoxLayout" name="horizontalLayout_6">
           <item>
-           <widget class="QRadioButton" name="radioButton_21">
+           <widget class="QRadioButton" name="radioButton6_1">
             <property name="text">
-             <string>RadioButton</string>
+             <string>Answer 1</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QRadioButton" name="radioButton_22">
+           <widget class="QRadioButton" name="radioButton6_2">
             <property name="text">
-             <string>RadioButton</string>
+             <string>Answer 2</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QRadioButton" name="radioButton_23">
+           <widget class="QRadioButton" name="radioButton6_3">
             <property name="text">
-             <string>RadioButton</string>
+             <string>Answer 3</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QRadioButton" name="radioButton_24">
+           <widget class="QRadioButton" name="radioButton6_4">
             <property name="text">
-             <string>RadioButton</string>
+             <string>Answer 4</string>
             </property>
            </widget>
           </item>
@@ -295,35 +295,35 @@
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_7">
         <item>
-         <widget class="QLineEdit" name="lineEditTest1_7"/>
+         <widget class="QLineEdit" name="lineEditTest7"/>
         </item>
         <item>
          <layout class="QHBoxLayout" name="horizontalLayout_7">
           <item>
-           <widget class="QRadioButton" name="radioButton_25">
+           <widget class="QRadioButton" name="radioButton7_1">
             <property name="text">
-             <string>RadioButton</string>
+             <string>Answer 1</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QRadioButton" name="radioButton_26">
+           <widget class="QRadioButton" name="radioButton7_2">
             <property name="text">
-             <string>RadioButton</string>
+             <string>Answer 2</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QRadioButton" name="radioButton_27">
+           <widget class="QRadioButton" name="radioButton7_3">
             <property name="text">
-             <string>RadioButton</string>
+             <string>Answer 3</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QRadioButton" name="radioButton_28">
+           <widget class="QRadioButton" name="radioButton7_4">
             <property name="text">
-             <string>RadioButton</string>
+             <string>Answer 4</string>
             </property>
            </widget>
           </item>
@@ -342,35 +342,35 @@
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_8">
         <item>
-         <widget class="QLineEdit" name="lineEditTest1_8"/>
+         <widget class="QLineEdit" name="lineEditTest8"/>
         </item>
         <item>
          <layout class="QHBoxLayout" name="horizontalLayout_8">
           <item>
-           <widget class="QRadioButton" name="radioButton_29">
+           <widget class="QRadioButton" name="radioButton8_1">
             <property name="text">
-             <string>RadioButton</string>
+             <string>Answer 1</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QRadioButton" name="radioButton_30">
+           <widget class="QRadioButton" name="radioButton8_2">
             <property name="text">
-             <string>RadioButton</string>
+             <string>Answer 2</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QRadioButton" name="radioButton_31">
+           <widget class="QRadioButton" name="radioButton8_3">
             <property name="text">
-             <string>RadioButton</string>
+             <string>Answer 3</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QRadioButton" name="radioButton_32">
+           <widget class="QRadioButton" name="radioButton8_4">
             <property name="text">
-             <string>RadioButton</string>
+             <string>Answer 4</string>
             </property>
            </widget>
           </item>
@@ -389,35 +389,35 @@
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_9">
         <item>
-         <widget class="QLineEdit" name="lineEditTest1_9"/>
+         <widget class="QLineEdit" name="lineEditTest9"/>
         </item>
         <item>
          <layout class="QHBoxLayout" name="horizontalLayout_9">
           <item>
-           <widget class="QRadioButton" name="radioButton_33">
+           <widget class="QRadioButton" name="radioButton9_1">
             <property name="text">
-             <string>RadioButton</string>
+             <string>Answer 1</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QRadioButton" name="radioButton_34">
+           <widget class="QRadioButton" name="radioButton9_2">
             <property name="text">
-             <string>RadioButton</string>
+             <string>Answer 2</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QRadioButton" name="radioButton_35">
+           <widget class="QRadioButton" name="radioButton9_3">
             <property name="text">
-             <string>RadioButton</string>
+             <string>Answer 3</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QRadioButton" name="radioButton_36">
+           <widget class="QRadioButton" name="radioButton9_4">
             <property name="text">
-             <string>RadioButton</string>
+             <string>Answer 4</string>
             </property>
            </widget>
           </item>
@@ -436,35 +436,35 @@
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_10">
         <item>
-         <widget class="QLineEdit" name="lineEditTest1_10"/>
+         <widget class="QLineEdit" name="lineEditTest10"/>
         </item>
         <item>
          <layout class="QHBoxLayout" name="horizontalLayout_10">
           <item>
-           <widget class="QRadioButton" name="radioButton_37">
+           <widget class="QRadioButton" name="radioButton10_1">
             <property name="text">
-             <string>RadioButton</string>
+             <string>Answer 1</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QRadioButton" name="radioButton_38">
+           <widget class="QRadioButton" name="radioButton10_2">
             <property name="text">
-             <string>RadioButton</string>
+             <string>Answer 2</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QRadioButton" name="radioButton_39">
+           <widget class="QRadioButton" name="radioButton10_3">
             <property name="text">
-             <string>RadioButton</string>
+             <string>Answer 3</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QRadioButton" name="radioButton_40">
+           <widget class="QRadioButton" name="radioButton10_4">
             <property name="text">
-             <string>RadioButton</string>
+             <string>Answer 4</string>
             </property>
            </widget>
           </item>
@@ -483,35 +483,35 @@
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_11">
         <item>
-         <widget class="QLineEdit" name="lineEditTest1_11"/>
+         <widget class="QLineEdit" name="lineEditTest11"/>
         </item>
         <item>
          <layout class="QHBoxLayout" name="horizontalLayout_11">
           <item>
-           <widget class="QRadioButton" name="radioButton_41">
+           <widget class="QRadioButton" name="radioButton11_1">
             <property name="text">
-             <string>RadioButton</string>
+             <string>Answer 1</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QRadioButton" name="radioButton_42">
+           <widget class="QRadioButton" name="radioButton11_2">
             <property name="text">
-             <string>RadioButton</string>
+             <string>Answer 2</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QRadioButton" name="radioButton_43">
+           <widget class="QRadioButton" name="radioButton11_3">
             <property name="text">
-             <string>RadioButton</string>
+             <string>Answer 3</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QRadioButton" name="radioButton_44">
+           <widget class="QRadioButton" name="radioButton11_4">
             <property name="text">
-             <string>RadioButton</string>
+             <string>Answer 4</string>
             </property>
            </widget>
           </item>
@@ -530,35 +530,35 @@
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_12">
         <item>
-         <widget class="QLineEdit" name="lineEditTest1_12"/>
+         <widget class="QLineEdit" name="lineEditTest12"/>
         </item>
         <item>
          <layout class="QHBoxLayout" name="horizontalLayout_12">
           <item>
-           <widget class="QRadioButton" name="radioButton_45">
+           <widget class="QRadioButton" name="radioButton12_1">
             <property name="text">
-             <string>RadioButton</string>
+             <string>Answer 1</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QRadioButton" name="radioButton_46">
+           <widget class="QRadioButton" name="radioButton12_2">
             <property name="text">
-             <string>RadioButton</string>
+             <string>Answer 2</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QRadioButton" name="radioButton_47">
+           <widget class="QRadioButton" name="radioButton12_3">
             <property name="text">
-             <string>RadioButton</string>
+             <string>Answer 3</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QRadioButton" name="radioButton_48">
+           <widget class="QRadioButton" name="radioButton12_4">
             <property name="text">
-             <string>RadioButton</string>
+             <string>Answer 4</string>
             </property>
            </widget>
           </item>
@@ -566,58 +566,11 @@
         </item>
        </layout>
       </widget>
-      <widget class="QWidget" name="layoutWidget_12">
+      <widget class="QPushButton" name="createButton">
        <property name="geometry">
         <rect>
-         <x>30</x>
-         <y>1030</y>
-         <width>551</width>
-         <height>65</height>
-        </rect>
-       </property>
-       <layout class="QVBoxLayout" name="verticalLayout_13">
-        <item>
-         <widget class="QLineEdit" name="lineEditTest1_13"/>
-        </item>
-        <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_13">
-          <item>
-           <widget class="QRadioButton" name="radioButton_49">
-            <property name="text">
-             <string>RadioButton</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QRadioButton" name="radioButton_50">
-            <property name="text">
-             <string>RadioButton</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QRadioButton" name="radioButton_51">
-            <property name="text">
-             <string>RadioButton</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QRadioButton" name="radioButton_52">
-            <property name="text">
-             <string>RadioButton</string>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </item>
-       </layout>
-      </widget>
-      <widget class="QPushButton" name="pushButton">
-       <property name="geometry">
-        <rect>
-         <x>230</x>
-         <y>1120</y>
+         <x>220</x>
+         <y>1090</y>
          <width>161</width>
          <height>29</height>
         </rect>
@@ -626,7 +579,7 @@
         <string>Create</string>
        </property>
       </widget>
-      <widget class="QWidget" name="">
+      <widget class="QWidget" name="layoutWidget">
        <property name="geometry">
         <rect>
          <x>30</x>
@@ -642,36 +595,46 @@
         <item>
          <layout class="QHBoxLayout" name="horizontalLayout">
           <item>
-           <widget class="QRadioButton" name="radioButton">
+           <widget class="QRadioButton" name="radioButton1_1">
             <property name="text">
-             <string>RadioButton</string>
+             <string>Answer 1</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QRadioButton" name="radioButton_2">
+           <widget class="QRadioButton" name="radioButton1_2">
             <property name="text">
-             <string>RadioButton</string>
+             <string>Answer 2</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QRadioButton" name="radioButton_3">
+           <widget class="QRadioButton" name="radioButton1_3">
             <property name="text">
-             <string>RadioButton</string>
+             <string>Answer 3</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QRadioButton" name="radioButton_4">
+           <widget class="QRadioButton" name="radioButton1_4">
             <property name="text">
-             <string>RadioButton</string>
+             <string>Answer 4</string>
             </property>
            </widget>
           </item>
          </layout>
         </item>
        </layout>
+      </widget>
+      <widget class="QLineEdit" name="lineEditLink">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>1030</y>
+         <width>551</width>
+         <height>28</height>
+        </rect>
+       </property>
       </widget>
      </widget>
     </widget>

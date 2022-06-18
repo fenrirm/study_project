@@ -27,7 +27,7 @@ public:
 private slots:
     void on_createClass_clicked();
 
-    void on_createClass_2_clicked();
+    void on_createTask_clicked();
 
 private:
     Ui::TeacherWindow *ui;
