@@ -1,15 +1,17 @@
 #ifndef TESTFACTORY_H
 #define TESTFACTORY_H
-
-#include "questionfactory.h"
-#include "question.h"
+#include "taskfactory.h"
 #include "test.h"
-#include "answer.h"
-
-class TestFactory:public QuestionFactory
+#include <QString>
+class TestFactory: public TaskFactory
 {
 public:
-    Question* createQuestion(QString,int) override;
+    //TestFactory();
+    AbsTask* create() override
+    {
+        return new Test();
+    }
+
 };
 
 #endif // TESTFACTORY_H

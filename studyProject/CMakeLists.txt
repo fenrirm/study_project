@@ -39,23 +39,27 @@ set(PROJECT_SOURCES
         classroomfile.cpp
         classroomfile.h
         fileclass.h
-        task.h
-        task.cpp
-        question.h
-        question.cpp
-        test.h
+        studenttestwindow.cpp
+        studenttestwindow.h
+        studenttestwindow.ui
+        createanswerwindow.cpp
+        createanswerwindow.h
+        createanswerwindow.ui
         test.cpp
-        answer.h
-        answer.cpp
-        createtaskwindow.h
-        createtaskwindow.cpp
-        createtaskwindow.ui
-        questionfactory.h
-        questionfactory.cpp
-        testfactory.h
+        test.h
+        writeword.cpp
+        writeword.h
         testfactory.cpp
-        ansfactory.h
-        ansfactory.cpp
+        testfactory.h
+        writewordfactory.cpp
+        writewordfactory.h
+        createtestwindow.cpp
+        createtestwindow.h
+        createtestwindow.ui
+        abstask.cpp
+        abstask.h
+        taskfactory.cpp
+        taskfactory.h
 
 )
 

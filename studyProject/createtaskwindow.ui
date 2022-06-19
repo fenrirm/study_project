@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>795</width>
-    <height>625</height>
+    <width>670</width>
+    <height>702</height>
    </rect>
   </property>
   <property name="maximumSize">
@@ -31,6 +31,12 @@
   <layout class="QGridLayout" name="gridLayout">
    <item row="0" column="1">
     <widget class="QScrollArea" name="scrollArea">
+     <property name="font">
+      <font>
+       <family>Calibri</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
      <property name="verticalScrollBarPolicy">
       <enum>Qt::ScrollBarAlwaysOn</enum>
      </property>
@@ -55,17 +61,36 @@
          <x>30</x>
          <y>150</y>
          <width>551</width>
-         <height>75</height>
+         <height>85</height>
         </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>12</pointsize>
+        </font>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_2">
         <item>
-         <widget class="QLineEdit" name="lineEditTest2"/>
+         <widget class="QLineEdit" name="lineEditTest2">
+          <property name="font">
+           <font>
+            <family>Calibri</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+         </widget>
         </item>
         <item>
          <layout class="QHBoxLayout" name="horizontalLayout_2">
           <item>
            <widget class="QRadioButton" name="radioButton2_1">
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
             <property name="text">
              <string>Answer 1</string>
             </property>
@@ -73,6 +98,12 @@
           </item>
           <item>
            <widget class="QRadioButton" name="radioButton2_2">
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
             <property name="text">
              <string>Answer 2</string>
             </property>
@@ -80,6 +111,12 @@
           </item>
           <item>
            <widget class="QRadioButton" name="radioButton2_3">
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
             <property name="text">
              <string>Answer 3</string>
             </property>
@@ -87,6 +124,12 @@
           </item>
           <item>
            <widget class="QRadioButton" name="radioButton2_4">
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
             <property name="text">
              <string>Answer 4</string>
             </property>
@@ -102,17 +145,36 @@
          <x>30</x>
          <y>230</y>
          <width>551</width>
-         <height>75</height>
+         <height>85</height>
         </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>12</pointsize>
+        </font>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_3">
         <item>
-         <widget class="QLineEdit" name="lineEditTest3"/>
+         <widget class="QLineEdit" name="lineEditTest3">
+          <property name="font">
+           <font>
+            <family>Calibri</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+         </widget>
         </item>
         <item>
          <layout class="QHBoxLayout" name="horizontalLayout_3">
           <item>
            <widget class="QRadioButton" name="radioButton3_1">
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
             <property name="text">
              <string>Answer 1</string>
             </property>
@@ -120,6 +182,12 @@
           </item>
           <item>
            <widget class="QRadioButton" name="radioButton3_2">
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
             <property name="text">
              <string>Answer 2</string>
             </property>
@@ -127,6 +195,12 @@
           </item>
           <item>
            <widget class="QRadioButton" name="radioButton3_3">
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
             <property name="text">
              <string>Answer 3</string>
             </property>
@@ -134,6 +208,12 @@
           </item>
           <item>
            <widget class="QRadioButton" name="radioButton3_4">
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
             <property name="text">
              <string>Answer 4</string>
             </property>
@@ -149,17 +229,36 @@
          <x>30</x>
          <y>310</y>
          <width>551</width>
-         <height>75</height>
+         <height>85</height>
         </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>12</pointsize>
+        </font>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_4">
         <item>
-         <widget class="QLineEdit" name="lineEditTest4"/>
+         <widget class="QLineEdit" name="lineEditTest4">
+          <property name="font">
+           <font>
+            <family>Calibri</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+         </widget>
         </item>
         <item>
          <layout class="QHBoxLayout" name="horizontalLayout_4">
           <item>
            <widget class="QRadioButton" name="radioButton4_1">
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
             <property name="text">
              <string>Answer 1</string>
             </property>
@@ -167,6 +266,12 @@
           </item>
           <item>
            <widget class="QRadioButton" name="radioButton4_2">
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
             <property name="text">
              <string>Answer 2</string>
             </property>
@@ -174,6 +279,12 @@
           </item>
           <item>
            <widget class="QRadioButton" name="radioButton4_3">
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
             <property name="text">
              <string>Answer 3</string>
             </property>
@@ -181,6 +292,12 @@
           </item>
           <item>
            <widget class="QRadioButton" name="radioButton4_4">
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
             <property name="text">
              <string>Answer 4</string>
             </property>
@@ -196,17 +313,36 @@
          <x>30</x>
          <y>390</y>
          <width>551</width>
-         <height>75</height>
+         <height>85</height>
         </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>12</pointsize>
+        </font>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_5">
         <item>
-         <widget class="QLineEdit" name="lineEditTest5"/>
+         <widget class="QLineEdit" name="lineEditTest5">
+          <property name="font">
+           <font>
+            <family>Calibri</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+         </widget>
         </item>
         <item>
          <layout class="QHBoxLayout" name="horizontalLayout_5">
           <item>
            <widget class="QRadioButton" name="radioButton5_1">
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
             <property name="text">
              <string>Answer 1</string>
             </property>
@@ -214,6 +350,12 @@
           </item>
           <item>
            <widget class="QRadioButton" name="radioButton5_2">
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
             <property name="text">
              <string>Answer 2</string>
             </property>
@@ -221,6 +363,12 @@
           </item>
           <item>
            <widget class="QRadioButton" name="radioButton5_3">
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
             <property name="text">
              <string>Answer 3</string>
             </property>
@@ -228,6 +376,12 @@
           </item>
           <item>
            <widget class="QRadioButton" name="radioButton5_4">
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
             <property name="text">
              <string>Answer 4</string>
             </property>
@@ -243,17 +397,36 @@
          <x>30</x>
          <y>470</y>
          <width>551</width>
-         <height>75</height>
+         <height>85</height>
         </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>12</pointsize>
+        </font>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_6">
         <item>
-         <widget class="QLineEdit" name="lineEditTest6"/>
+         <widget class="QLineEdit" name="lineEditTest6">
+          <property name="font">
+           <font>
+            <family>Calibri</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+         </widget>
         </item>
         <item>
          <layout class="QHBoxLayout" name="horizontalLayout_6">
           <item>
            <widget class="QRadioButton" name="radioButton6_1">
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
             <property name="text">
              <string>Answer 1</string>
             </property>
@@ -261,6 +434,12 @@
           </item>
           <item>
            <widget class="QRadioButton" name="radioButton6_2">
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
             <property name="text">
              <string>Answer 2</string>
             </property>
@@ -268,6 +447,12 @@
           </item>
           <item>
            <widget class="QRadioButton" name="radioButton6_3">
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
             <property name="text">
              <string>Answer 3</string>
             </property>
@@ -275,6 +460,12 @@
           </item>
           <item>
            <widget class="QRadioButton" name="radioButton6_4">
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
             <property name="text">
              <string>Answer 4</string>
             </property>
@@ -290,17 +481,36 @@
          <x>30</x>
          <y>550</y>
          <width>551</width>
-         <height>75</height>
+         <height>85</height>
         </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>12</pointsize>
+        </font>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_7">
         <item>
-         <widget class="QLineEdit" name="lineEditTest7"/>
+         <widget class="QLineEdit" name="lineEditTest7">
+          <property name="font">
+           <font>
+            <family>Calibri</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+         </widget>
         </item>
         <item>
          <layout class="QHBoxLayout" name="horizontalLayout_7">
           <item>
            <widget class="QRadioButton" name="radioButton7_1">
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
             <property name="text">
              <string>Answer 1</string>
             </property>
@@ -308,6 +518,12 @@
           </item>
           <item>
            <widget class="QRadioButton" name="radioButton7_2">
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
             <property name="text">
              <string>Answer 2</string>
             </property>
@@ -315,6 +531,12 @@
           </item>
           <item>
            <widget class="QRadioButton" name="radioButton7_3">
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
             <property name="text">
              <string>Answer 3</string>
             </property>
@@ -322,6 +544,12 @@
           </item>
           <item>
            <widget class="QRadioButton" name="radioButton7_4">
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
             <property name="text">
              <string>Answer 4</string>
             </property>
@@ -337,17 +565,36 @@
          <x>30</x>
          <y>630</y>
          <width>551</width>
-         <height>75</height>
+         <height>85</height>
         </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>12</pointsize>
+        </font>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_8">
         <item>
-         <widget class="QLineEdit" name="lineEditTest8"/>
+         <widget class="QLineEdit" name="lineEditTest8">
+          <property name="font">
+           <font>
+            <family>Calibri</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+         </widget>
         </item>
         <item>
          <layout class="QHBoxLayout" name="horizontalLayout_8">
           <item>
            <widget class="QRadioButton" name="radioButton8_1">
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
             <property name="text">
              <string>Answer 1</string>
             </property>
@@ -355,6 +602,12 @@
           </item>
           <item>
            <widget class="QRadioButton" name="radioButton8_2">
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
             <property name="text">
              <string>Answer 2</string>
             </property>
@@ -362,6 +615,12 @@
           </item>
           <item>
            <widget class="QRadioButton" name="radioButton8_3">
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
             <property name="text">
              <string>Answer 3</string>
             </property>
@@ -369,6 +628,12 @@
           </item>
           <item>
            <widget class="QRadioButton" name="radioButton8_4">
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
             <property name="text">
              <string>Answer 4</string>
             </property>
@@ -384,17 +649,36 @@
          <x>30</x>
          <y>710</y>
          <width>551</width>
-         <height>75</height>
+         <height>85</height>
         </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>12</pointsize>
+        </font>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_9">
         <item>
-         <widget class="QLineEdit" name="lineEditTest9"/>
+         <widget class="QLineEdit" name="lineEditTest9">
+          <property name="font">
+           <font>
+            <family>Calibri</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+         </widget>
         </item>
         <item>
          <layout class="QHBoxLayout" name="horizontalLayout_9">
           <item>
            <widget class="QRadioButton" name="radioButton9_1">
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
             <property name="text">
              <string>Answer 1</string>
             </property>
@@ -402,6 +686,12 @@
           </item>
           <item>
            <widget class="QRadioButton" name="radioButton9_2">
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
             <property name="text">
              <string>Answer 2</string>
             </property>
@@ -409,6 +699,12 @@
           </item>
           <item>
            <widget class="QRadioButton" name="radioButton9_3">
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
             <property name="text">
              <string>Answer 3</string>
             </property>
@@ -416,6 +712,12 @@
           </item>
           <item>
            <widget class="QRadioButton" name="radioButton9_4">
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
             <property name="text">
              <string>Answer 4</string>
             </property>
@@ -433,6 +735,12 @@
          <width>551</width>
          <height>75</height>
         </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>12</pointsize>
+        </font>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_10">
         <item>
@@ -478,17 +786,36 @@
          <x>30</x>
          <y>870</y>
          <width>551</width>
-         <height>75</height>
+         <height>85</height>
         </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>12</pointsize>
+        </font>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_11">
         <item>
-         <widget class="QLineEdit" name="lineEditTest11"/>
+         <widget class="QLineEdit" name="lineEditTest11">
+          <property name="font">
+           <font>
+            <family>Calibri</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+         </widget>
         </item>
         <item>
          <layout class="QHBoxLayout" name="horizontalLayout_11">
           <item>
            <widget class="QRadioButton" name="radioButton11_1">
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
             <property name="text">
              <string>Answer 1</string>
             </property>
@@ -496,6 +823,12 @@
           </item>
           <item>
            <widget class="QRadioButton" name="radioButton11_2">
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
             <property name="text">
              <string>Answer 2</string>
             </property>
@@ -503,6 +836,12 @@
           </item>
           <item>
            <widget class="QRadioButton" name="radioButton11_3">
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
             <property name="text">
              <string>Answer 3</string>
             </property>
@@ -510,6 +849,12 @@
           </item>
           <item>
            <widget class="QRadioButton" name="radioButton11_4">
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
             <property name="text">
              <string>Answer 4</string>
             </property>
@@ -525,17 +870,36 @@
          <x>30</x>
          <y>950</y>
          <width>551</width>
-         <height>75</height>
+         <height>85</height>
         </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>12</pointsize>
+        </font>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_12">
         <item>
-         <widget class="QLineEdit" name="lineEditTest12"/>
+         <widget class="QLineEdit" name="lineEditTest12">
+          <property name="font">
+           <font>
+            <family>Calibri</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+         </widget>
         </item>
         <item>
          <layout class="QHBoxLayout" name="horizontalLayout_12">
           <item>
            <widget class="QRadioButton" name="radioButton12_1">
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
             <property name="text">
              <string>Answer 1</string>
             </property>
@@ -543,6 +907,12 @@
           </item>
           <item>
            <widget class="QRadioButton" name="radioButton12_2">
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
             <property name="text">
              <string>Answer 2</string>
             </property>
@@ -550,6 +920,12 @@
           </item>
           <item>
            <widget class="QRadioButton" name="radioButton12_3">
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
             <property name="text">
              <string>Answer 3</string>
             </property>
@@ -557,6 +933,12 @@
           </item>
           <item>
            <widget class="QRadioButton" name="radioButton12_4">
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
             <property name="text">
              <string>Answer 4</string>
             </property>
@@ -575,6 +957,12 @@
          <height>29</height>
         </rect>
        </property>
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
        <property name="text">
         <string>Create</string>
        </property>
@@ -585,17 +973,36 @@
          <x>30</x>
          <y>70</y>
          <width>551</width>
-         <height>75</height>
+         <height>85</height>
         </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>12</pointsize>
+        </font>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout">
         <item>
-         <widget class="QLineEdit" name="lineEditTest1"/>
+         <widget class="QLineEdit" name="lineEditTest1">
+          <property name="font">
+           <font>
+            <family>Calibri</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+         </widget>
         </item>
         <item>
          <layout class="QHBoxLayout" name="horizontalLayout">
           <item>
            <widget class="QRadioButton" name="radioButton1_1">
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
             <property name="text">
              <string>Answer 1</string>
             </property>
@@ -603,6 +1010,12 @@
           </item>
           <item>
            <widget class="QRadioButton" name="radioButton1_2">
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
             <property name="text">
              <string>Answer 2</string>
             </property>
@@ -610,6 +1023,12 @@
           </item>
           <item>
            <widget class="QRadioButton" name="radioButton1_3">
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
             <property name="text">
              <string>Answer 3</string>
             </property>
@@ -617,6 +1036,12 @@
           </item>
           <item>
            <widget class="QRadioButton" name="radioButton1_4">
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
             <property name="text">
              <string>Answer 4</string>
             </property>
@@ -634,6 +1059,25 @@
          <width>551</width>
          <height>28</height>
         </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+      </widget>
+      <widget class="QLabel" name="taskName">
+       <property name="geometry">
+        <rect>
+         <x>270</x>
+         <y>20</y>
+         <width>71</width>
+         <height>24</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
        </property>
       </widget>
      </widget>

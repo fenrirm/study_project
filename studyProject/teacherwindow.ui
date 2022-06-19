@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>986</width>
-    <height>599</height>
+    <width>927</width>
+    <height>703</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -24,7 +24,7 @@ background-image: url(:/images/bg.jpg);
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>260</y>
+      <y>220</y>
       <width>251</width>
       <height>84</height>
      </rect>
@@ -87,7 +87,7 @@ background-image: url(:/images/bg.jpg);
         </font>
        </property>
        <property name="text">
-        <string>id:</string>
+        <string/>
        </property>
       </widget>
      </item>
@@ -119,78 +119,11 @@ background-image: url(:/images/bg.jpg);
      </item>
     </layout>
    </widget>
-   <widget class="QWidget" name="layoutWidget">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>360</y>
-      <width>309</width>
-      <height>231</height>
-     </rect>
-    </property>
-    <layout class="QVBoxLayout" name="verticalLayout_4">
-     <item>
-      <widget class="QLineEdit" name="lineEditTask"/>
-     </item>
-     <item>
-      <widget class="QLineEdit" name="lineEditClassroom"/>
-     </item>
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout">
-       <item>
-        <widget class="QRadioButton" name="radioButton_type1">
-         <property name="text">
-          <string>RadioButton</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QRadioButton" name="radioButton_type2">
-         <property name="text">
-          <string>RadioButton</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <layout class="QVBoxLayout" name="verticalLayout_3">
-       <item>
-        <widget class="QLabel" name="label">
-         <property name="text">
-          <string>Type one is 12 tests</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="label_2">
-         <property name="text">
-          <string>Type two is 6 tests and 6 write answert</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <widget class="QPushButton" name="createTask">
-       <property name="font">
-        <font>
-         <family>Calibri</family>
-         <pointsize>11</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>Create a task</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
    <widget class="QPushButton" name="logout">
     <property name="geometry">
      <rect>
-      <x>860</x>
-      <y>20</y>
+      <x>790</x>
+      <y>630</y>
       <width>111</width>
       <height>41</height>
      </rect>
@@ -198,6 +131,71 @@ background-image: url(:/images/bg.jpg);
     <property name="text">
      <string>Log Out</string>
     </property>
+   </widget>
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>30</y>
+      <width>571</width>
+      <height>160</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_4">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QLineEdit" name="classroomName"/>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QLineEdit" name="testName"/>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="openTaskName"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QLabel" name="aboutTest">
+           <property name="text">
+            <string>12 tests with 4 variants to answer</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="aboutWriteWord">
+           <property name="text">
+            <string>12 questions to answer with a word</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QPushButton" name="createTest">
+         <property name="text">
+          <string>Create task</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="createOpenTask">
+         <property name="text">
+          <string>Create task</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
    </widget>
   </widget>
  </widget>

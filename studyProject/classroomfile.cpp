@@ -41,8 +41,8 @@ void classroomfile::addStudent(QString& path, secondwindow* studentwindow, QStri
             QJsonObject obj = arr[i].toObject();
             //qDebug()<<obj.keys()[0];
             //qDebug()<<teacherId;
-            qDebug()<<obj[obj.keys()[0]].toObject()["name"].toString();
-            qDebug()<<name;
+//            qDebug()<<obj[obj.keys()[0]].toObject()["name"].toString();
+//            qDebug()<<name;
             if(obj.keys()[0]==teacherId)
             {
                 if(obj[obj.keys()[0]].toObject()["name"].toString()==name)

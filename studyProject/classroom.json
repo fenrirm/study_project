@@ -10,5 +10,13 @@
                 "karina"
             ]
         }
+    },
+    {
+        "qwerty": {
+            "name": "com",
+            "studentsId": [
+                0
+            ]
+        }
     }
 ]

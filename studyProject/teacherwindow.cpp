@@ -1,11 +1,10 @@
 #include "teacherwindow.h"
 #include "classroomfile.h"
-#include "createtaskwindow.h"
-#include "task.h"
-#include "questionfactory.h"
-#include "testfactory.h"
-#include "ansfactory.h"
 #include "mainwindow.h"
+#include "testfactory.h"
+#include "writewordfactory.h"
+#include "createtestwindow.h"
+
 
 TeacherWindow::TeacherWindow(QString id, QString name, QString surname, QWidget *parent) :
     QMainWindow(parent),
@@ -16,6 +15,9 @@ TeacherWindow::TeacherWindow(QString id, QString name, QString surname, QWidget 
     ui->name->setText(name);
     ui->surname->setText(surname);
     ui->nameClassLine->setPlaceholderText("Enter a name of a class");
+    ui->classroomName->setPlaceholderText("Enter a name of a classroom");
+    ui->testName->setPlaceholderText("Eneter a title of the test");
+    ui->openTaskName->setPlaceholderText("Enter a title of the open task");
 }
 
 TeacherWindow::~TeacherWindow()
@@ -41,33 +43,20 @@ void TeacherWindow::on_createClass_clicked()
 }
 
 
-
-
-
-void TeacherWindow::on_createTask_clicked()
-{
-    QString type;
-
-    if(ui->radioButton_type1->isChecked()){
-        type="1";
-
-    }else  if(ui->radioButton_type2->isChecked()){
-        type="2";
-    }
-
-    Task* newTask = new Task(type,ui->id->text(),ui->lineEditClassroom->text(),ui->lineEditTask->text());
-
-    CreateTaskWindow* taskCreateWindow = new CreateTaskWindow(*newTask,nullptr);
-    taskCreateWindow->show();
-    this->close();
-}
-
-
-
 void TeacherWindow::on_logout_clicked()
 {
     MainWindow* mainwindow = new MainWindow();
     mainwindow->show();
     this->close();
+}
+
+
+void TeacherWindow::on_createTest_clicked()
+{
+   createTestWindow* testwindow = new createTestWindow(ui->testName->text());
+   testwindow->teacherId=ui->id->text();
+   testwindow->classroomName=ui->classroomName->text();
+   testwindow->show();
+
 }
 
