@@ -6,12 +6,12 @@
 #include "question.h"
 
 
-CreateTaskWindow::CreateTaskWindow(Task task,QWidget *parent) :
+CreateTaskWindow::CreateTaskWindow(Task task, QString nameOfTheTask, QWidget *parent) :
     QWidget(parent),
     ui(new Ui::CreateTaskWindow)
 {
-
     ui->setupUi(this);
+    ui->taskName->setText(nameOfTheTask);
     task=task;
 }
 
@@ -40,7 +40,6 @@ int checkCorrectAns(bool one,bool two,bool three,bool four){
 void CreateTaskWindow::on_createButton_clicked()
 {
     TestFactory* factory;
-
     int testAns=checkCorrectAns(ui->radioButton1_1->isChecked(),ui->radioButton1_2->isChecked(),ui->radioButton1_3->isChecked(),ui->radioButton1_4->isChecked());
     Question* test1 = factory->createQuestion(ui->lineEditTest1->text(),testAns);
     this->task->pushQusetion(test1);

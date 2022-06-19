@@ -15,7 +15,7 @@ public:
     QString getAnsText(){
         return this->questionText;
     }
-    void setTestText(QString text){
+    void setQuestionText(QString text){
          this->questionText=text;
     }
 
@@ -25,6 +25,9 @@ public:
     void setCorrect(QString corr){
          this->correctAns=corr;
     }
+    void showType()override{
+
+    };
 };
 
 #endif // ANSWER_H

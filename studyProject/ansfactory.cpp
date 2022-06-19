@@ -5,7 +5,9 @@ AnsFactory::AnsFactory()
 {
 
 }
-Question* AnsFactory::createQuestion(QString text,QString ans){
-    Answer* ansTask = new Answer(text,ans);
+Question AnsFactory::createQuestion(QString text,QString ans){
+    Answer ansTask;
+    ansTask.setQuestionText(text);
+    ansTask.setCorrect(ans);
     return ansTask;
 }

@@ -15,7 +15,7 @@ class CreateTaskWindow : public QWidget
     Q_OBJECT
 
 public:
-    explicit CreateTaskWindow(Task task,QWidget *parent = nullptr);
+    explicit CreateTaskWindow(Task task, QString nameOfTheTask, QWidget *parent = nullptr);
     Task* task;
     ~CreateTaskWindow();
 

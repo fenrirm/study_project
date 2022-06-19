@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>createTestWindow</class>
+ <widget class="QWidget" name="createTestWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>787</width>
+    <height>631</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-image: url(:/images/bg.jpg);</string>
+  </property>
+  <widget class="QScrollArea" name="scrollArea">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>761</width>
+     <height>601</height>
+    </rect>
+   </property>
+   <property name="verticalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOn</enum>
+   </property>
+   <property name="horizontalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+   <property name="sizeAdjustPolicy">
+    <enum>QAbstractScrollArea::AdjustToContentsOnFirstShow</enum>
+   </property>
+   <property name="widgetResizable">
+    <bool>false</bool>
+   </property>
+   <widget class="QWidget" name="scrollAreaWidgetContents">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>-1080</y>
+      <width>739</width>
+      <height>1679</height>
+     </rect>
+    </property>
+    <widget class="QLabel" name="testName">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>20</y>
+       <width>391</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>200</y>
+       <width>681</width>
+       <height>118</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QLineEdit" name="question2"/>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QLineEdit" name="answer2_1"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="answer2_2"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="answer2_3"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="answer2_4"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="rightanswer2"/>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="layoutWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>330</y>
+       <width>681</width>
+       <height>118</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <widget class="QLineEdit" name="question3"/>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QLineEdit" name="answer3_1"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="answer3_2"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="answer3_3"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="answer3_4"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="rightanswer3"/>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="layoutWidget_3">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>460</y>
+       <width>681</width>
+       <height>118</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_4">
+      <item>
+       <widget class="QLineEdit" name="question4"/>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <widget class="QLineEdit" name="answer4_1"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="answer4_2"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="answer4_3"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="answer4_4"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="rightanswer4"/>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="layoutWidget_4">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>590</y>
+       <width>681</width>
+       <height>118</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_5">
+      <item>
+       <widget class="QLineEdit" name="question5"/>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_5">
+        <item>
+         <widget class="QLineEdit" name="answer5_1"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="answer5_2"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="answer5_3"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="answer5_4"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="rightanswer5"/>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="layoutWidget_5">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>720</y>
+       <width>681</width>
+       <height>118</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_6">
+      <item>
+       <widget class="QLineEdit" name="question6"/>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_6">
+        <item>
+         <widget class="QLineEdit" name="answer6_1"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="answer6_2"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="answer6_3"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="answer6_4"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="rightanswer6"/>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="layoutWidget_6">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>850</y>
+       <width>681</width>
+       <height>118</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_7">
+      <item>
+       <widget class="QLineEdit" name="question7"/>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_7">
+        <item>
+         <widget class="QLineEdit" name="answer7_1"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="answer7_2"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="answer7_3"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="answer7_4"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="rightanswer7"/>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="layoutWidget_7">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>980</y>
+       <width>681</width>
+       <height>118</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_8">
+      <item>
+       <widget class="QLineEdit" name="question8"/>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_8">
+        <item>
+         <widget class="QLineEdit" name="answer8_1"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="answer8_2"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="answer8_3"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="answer8_4"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="rightanswer8"/>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="layoutWidget_8">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>1110</y>
+       <width>681</width>
+       <height>118</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_9">
+      <item>
+       <widget class="QLineEdit" name="question9"/>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_9">
+        <item>
+         <widget class="QLineEdit" name="answer9_1"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="answer9_2"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="answer9_3"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="answer9_4"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="rightanswer9"/>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="layoutWidget_9">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>1240</y>
+       <width>681</width>
+       <height>118</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_10">
+      <item>
+       <widget class="QLineEdit" name="question10"/>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_10">
+        <item>
+         <widget class="QLineEdit" name="answer10_1"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="answer10_2"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="answer10_3"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="answer10_4"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="rightanswer10"/>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="layoutWidget_10">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>1370</y>
+       <width>681</width>
+       <height>118</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_11">
+      <item>
+       <widget class="QLineEdit" name="question11"/>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_11">
+        <item>
+         <widget class="QLineEdit" name="answer11_1"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="answer11_2"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="answer11_3"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="answer11_4"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="rightanswer11"/>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="layoutWidget_11">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>1500</y>
+       <width>681</width>
+       <height>118</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_12">
+      <item>
+       <widget class="QLineEdit" name="question12"/>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_12">
+        <item>
+         <widget class="QLineEdit" name="answer12_1"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="answer12_2"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="answer12_3"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="answer12_4"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="rightanswer12"/>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QPushButton" name="createTest">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>1630</y>
+       <width>102</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Create test</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>70</y>
+       <width>681</width>
+       <height>118</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLineEdit" name="question1"/>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLineEdit" name="answer1_1"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="answer1_2"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="answer1_3"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="answer1_4"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="rightanswer1"/>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

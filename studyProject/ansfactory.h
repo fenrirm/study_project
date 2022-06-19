@@ -11,7 +11,7 @@ class AnsFactory:public QuestionFactory
 {
 public:
     AnsFactory();
-    Question* createQuestion(QString,QString) override;
+    Question createQuestion(QString,QString) override;
 };
 
 #endif // ANSFACTORY_H

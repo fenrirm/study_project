@@ -10,5 +10,38 @@
                 "karina"
             ]
         }
+    },
+    {
+        "qwerty": {
+            "name": "com",
+            "studentsId": [
+                0,
+                "karina"
+            ]
+        }
+    },
+    {
+        "marta": {
+            "name": "class1",
+            "studentsId": [
+                0
+            ]
+        }
+    },
+    {
+        "marta": {
+            "name": "class2",
+            "studentsId": [
+                0
+            ]
+        }
+    },
+    {
+        "marta": {
+            "name": "class3",
+            "studentsId": [
+                0
+            ]
+        }
     }
 ]

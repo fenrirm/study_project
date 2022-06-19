@@ -1,10 +1,10 @@
 #include "teacherwindow.h"
 #include "classroomfile.h"
-#include "createtaskwindow.h"
-#include "task.h"
-#include "questionfactory.h"
+#include "mainwindow.h"
 #include "testfactory.h"
-#include "ansfactory.h"
+#include "writewordfactory.h"
+#include "createtestwindow.h"
+
 
 TeacherWindow::TeacherWindow(QString id, QString name, QString surname, QWidget *parent) :
     QMainWindow(parent),
@@ -15,8 +15,33 @@ TeacherWindow::TeacherWindow(QString id, QString name, QString surname, QWidget 
     ui->name->setText(name);
     ui->surname->setText(surname);
     ui->nameClassLine->setPlaceholderText("Enter a name of a class");
-}
+    ui->classroomName->setPlaceholderText("Enter a name of a classroom");
+    ui->testName->setPlaceholderText("Eneter a title of the test");
+    ui->openTaskName->setPlaceholderText("Enter a title of the open task");
 
+    //Create and add label to classromm
+//    QLabel::QWidget* label= new QLabel("Some text");
+//    ui->ClassLayout->addWidget(label);
+//    label->show();
+    QFile file("D:/Study/Term 2/OOOP/project/study_project/studyProject/classroom.json");
+    if(file.open(QIODevice::ReadOnly))
+    {
+        QByteArray bytes = file.readAll();
+        file.close();
+        QJsonDocument doc (QJsonDocument::fromJson(bytes));
+        QJsonArray arr= doc.array();
+        foreach(const QJsonValue& value, arr)
+        {
+            QJsonObject obj = value.toObject();
+            if(obj.keys()[0]==ui->id->text()){
+                QLabel::QWidget* label= new QLabel(obj[obj.keys()[0]].toObject()["name"].toString());
+                ui->ClassLayout->addWidget(label);
+                label->show();
+            }
+        }
+    }
+
+};
 TeacherWindow::~TeacherWindow()
 {
     delete ui;
@@ -36,28 +61,52 @@ void TeacherWindow::on_createClass_clicked()
    u.setPassword(nullptr);
    QString path="D:/Study/Term 2/OOOP/project/study_project/studyProject/classroom.json";
    classroomfile writeclassroom;
-   writeclassroom.writeToFile(path, this, u, classroom);
+   writeclassroom.writeToFile(path, nullptr, this, u, classroom);
 }
 
 
-
-
-
-void TeacherWindow::on_createTask_clicked()
+void TeacherWindow::on_logout_clicked()
 {
-    QString type;
+    MainWindow* mainwindow = new MainWindow();
+    mainwindow->show();
+    this->close();
+}
 
-    if(ui->radioButton_type1->isChecked()){
-        type="1";
 
-    }else  if(ui->radioButton_type2->isChecked()){
-        type="2";
+void TeacherWindow::on_createTest_clicked()
+{
+   createTestWindow* testwindow = new createTestWindow(ui->testName->text());
+   testwindow->teacherId=ui->id->text();
+   testwindow->classroomName=ui->classroomName->text();
+   testwindow->show();
+
+}
+
+void TeacherWindow::on_ShowClassTasks_clicked()
+{
+    QList<QWidget *> widgets = ui->verticalWidget_2->findChildren<QWidget *>();
+    foreach(QWidget * widget, widgets)
+    {
+        delete widget;
     }
 
-    Task* newTask = new Task(type,ui->id->text(),ui->lineEditClassroom->text(),ui->lineEditTask->text());
-
-    CreateTaskWindow* taskCreateWindow = new CreateTaskWindow(*newTask,nullptr);
-    taskCreateWindow->show();
-    this->close();
+    QFile file("D:/Study/Term 2/OOOP/project/study_project/studyProject/tests.json");
+    if(file.open(QIODevice::ReadOnly))
+    {
+        QByteArray bytes = file.readAll();
+        file.close();
+        QJsonDocument doc (QJsonDocument::fromJson(bytes));
+        QJsonArray arr= doc.array();
+        foreach(const QJsonValue& value, arr)
+        {
+            QJsonObject obj = value.toObject();
+            if((obj[obj.keys()[0]].toObject()["clasroomName"].toString()==ui->ClassNameToShow->text() )&&
+                   (obj[obj.keys()[0]].toObject()["teacheID"].toString() == ui->id->text())){
+                QLabel::QWidget* label= new QLabel(obj.keys()[0]);
+                ui->TaskLayout->addWidget(label);
+                label->show();
+            }
+        }
+    }
 }
 

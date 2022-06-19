@@ -20,6 +20,12 @@ private slots:
 
     void on_connectToClass_clicked();
 
+    void on_logOut_clicked();
+
+    void on_ShowClassTasks_clicked();
+
+    void on_DoTask_clicked();
+
 private:
     Ui::secondwindow *ui;
 };
