@@ -59,7 +59,7 @@ void TeacherWindow::on_createClass_clicked()
    u.setId(nullptr);
    u.setIsTeacher(nullptr);
    u.setPassword(nullptr);
-   QString path="D:/Study/Term 2/OOOP/project/study_project/studyProject/classroom.json";
+   QString path="D:/oop/Qt/studyProject/classroom.json";
    classroomfile writeclassroom;
    writeclassroom.writeToFile(path, nullptr, this, u, classroom);
 }
@@ -110,5 +110,14 @@ void TeacherWindow::on_ShowClassTasks_clicked()
         }
     }
 
+}
+
+
+void TeacherWindow::on_createOpenTask_clicked()
+{
+    createOpenTaskWindow* opentaskwindow = new createOpenTaskWindow(ui->openTaskName->text());
+    opentaskwindow->teacherId=ui->id->text();
+    opentaskwindow->classroomName=ui->classroomName->text();
+    opentaskwindow->show();
 }
 

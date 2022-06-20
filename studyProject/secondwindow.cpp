@@ -14,7 +14,7 @@ secondwindow::secondwindow(QString id, QString name, QString surname, QWidget *p
     ui->name->setText(name);
     ui->surname->setText(surname);
 
-    QFile file("D:/Study/Term 2/OOOP/project/study_project/studyProject/classroom.json");
+    QFile file("D:/oop/Qt/studyProject/classroom.json");
     if(file.open(QIODevice::ReadOnly))
     {
         QByteArray bytes = file.readAll();
@@ -49,7 +49,7 @@ secondwindow::~secondwindow()
 void secondwindow::on_connectToClass_clicked()
 {
     classroomfile student;
-    QString path="D:/Study/Term 2/OOOP/project/study_project/studyProject/classroom.json";
+    QString path="D:/oop/Qt/studyProject/classroom.json";
     student.addStudent(path, this, ui->teacherId->text(), ui->classroomName->text(), ui->id->text());
 }
 
@@ -70,7 +70,7 @@ void secondwindow::on_ShowClassTasks_clicked()
         delete widget;
     }
 
-    QFile file("D:/Study/Term 2/OOOP/project/study_project/studyProject/tests.json");
+    QFile file("D:/oop/Qt/studyProject/tests.json");
     if(file.open(QIODevice::ReadOnly))
     {
         QByteArray bytes = file.readAll();
@@ -92,7 +92,7 @@ void secondwindow::on_ShowClassTasks_clicked()
 
 void secondwindow::on_DoTask_clicked()
 {
-    QFile file("D:/Study/Term 2/OOOP/project/study_project/studyProject/tests.json");
+    QFile file("D:/oop/Qt/studyProject/tests.json");
     if(file.open(QIODevice::ReadOnly))
     {
         QByteArray bytes = file.readAll();

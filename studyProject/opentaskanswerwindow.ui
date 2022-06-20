@@ -1,50 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>createOpenTaskWindow</class>
- <widget class="QWidget" name="createOpenTaskWindow">
+ <class>OpenTaskAnswerWindow</class>
+ <widget class="QWidget" name="OpenTaskAnswerWindow">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>829</width>
-    <height>494</height>
+    <width>718</width>
+    <height>1243</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">
-
-background-image: url(:/images/bg.jpg);</string>
+   <string notr="true">background-image: url(:/images/bg.jpg);</string>
   </property>
   <layout class="QGridLayout" name="gridLayout">
    <item row="0" column="0">
     <widget class="QScrollArea" name="scrollArea">
-     <property name="verticalScrollBarPolicy">
-      <enum>Qt::ScrollBarAlwaysOn</enum>
-     </property>
-     <property name="sizeAdjustPolicy">
-      <enum>QAbstractScrollArea::AdjustToContentsOnFirstShow</enum>
-     </property>
      <property name="widgetResizable">
-      <bool>false</bool>
+      <bool>true</bool>
      </property>
      <widget class="QWidget" name="scrollAreaWidgetContents">
       <property name="geometry">
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>760</width>
-        <height>1353</height>
+        <width>690</width>
+        <height>1215</height>
        </rect>
       </property>
-      <widget class="QLabel" name="openTaskName">
+      <widget class="QLabel" name="opentaskName">
        <property name="geometry">
         <rect>
-         <x>190</x>
+         <x>260</x>
          <y>10</y>
-         <width>411</width>
+         <width>181</width>
          <height>31</height>
         </rect>
        </property>
@@ -57,16 +49,20 @@ background-image: url(:/images/bg.jpg);</string>
         <rect>
          <x>30</x>
          <y>150</y>
-         <width>691</width>
-         <height>75</height>
+         <width>621</width>
+         <height>67</height>
         </rect>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_2">
         <item>
-         <widget class="QLineEdit" name="question2"/>
+         <widget class="QLabel" name="question2">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
         </item>
         <item>
-         <widget class="QLineEdit" name="rightanswer2"/>
+         <widget class="QLineEdit" name="answer2"/>
         </item>
        </layout>
       </widget>
@@ -74,17 +70,21 @@ background-image: url(:/images/bg.jpg);</string>
        <property name="geometry">
         <rect>
          <x>30</x>
-         <y>250</y>
-         <width>691</width>
-         <height>75</height>
+         <y>240</y>
+         <width>621</width>
+         <height>67</height>
         </rect>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_3">
         <item>
-         <widget class="QLineEdit" name="question3"/>
+         <widget class="QLabel" name="question3">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
         </item>
         <item>
-         <widget class="QLineEdit" name="rightanswer3"/>
+         <widget class="QLineEdit" name="answer3"/>
         </item>
        </layout>
       </widget>
@@ -92,17 +92,21 @@ background-image: url(:/images/bg.jpg);</string>
        <property name="geometry">
         <rect>
          <x>30</x>
-         <y>350</y>
-         <width>691</width>
-         <height>75</height>
+         <y>330</y>
+         <width>621</width>
+         <height>67</height>
         </rect>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_4">
         <item>
-         <widget class="QLineEdit" name="question4"/>
+         <widget class="QLabel" name="question4">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
         </item>
         <item>
-         <widget class="QLineEdit" name="rightanswer4"/>
+         <widget class="QLineEdit" name="answer4"/>
         </item>
        </layout>
       </widget>
@@ -110,17 +114,21 @@ background-image: url(:/images/bg.jpg);</string>
        <property name="geometry">
         <rect>
          <x>30</x>
-         <y>450</y>
-         <width>691</width>
-         <height>75</height>
+         <y>420</y>
+         <width>621</width>
+         <height>67</height>
         </rect>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_5">
         <item>
-         <widget class="QLineEdit" name="question5"/>
+         <widget class="QLabel" name="question5">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
         </item>
         <item>
-         <widget class="QLineEdit" name="rightanswer5"/>
+         <widget class="QLineEdit" name="answer5"/>
         </item>
        </layout>
       </widget>
@@ -128,17 +136,21 @@ background-image: url(:/images/bg.jpg);</string>
        <property name="geometry">
         <rect>
          <x>30</x>
-         <y>550</y>
-         <width>691</width>
-         <height>75</height>
+         <y>510</y>
+         <width>621</width>
+         <height>67</height>
         </rect>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_6">
         <item>
-         <widget class="QLineEdit" name="question6"/>
+         <widget class="QLabel" name="question6">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
         </item>
         <item>
-         <widget class="QLineEdit" name="rightanswer6"/>
+         <widget class="QLineEdit" name="answer6"/>
         </item>
        </layout>
       </widget>
@@ -146,17 +158,21 @@ background-image: url(:/images/bg.jpg);</string>
        <property name="geometry">
         <rect>
          <x>30</x>
-         <y>650</y>
-         <width>691</width>
-         <height>75</height>
+         <y>600</y>
+         <width>621</width>
+         <height>67</height>
         </rect>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_7">
         <item>
-         <widget class="QLineEdit" name="question7"/>
+         <widget class="QLabel" name="question7">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
         </item>
         <item>
-         <widget class="QLineEdit" name="rightanswer7"/>
+         <widget class="QLineEdit" name="answer7"/>
         </item>
        </layout>
       </widget>
@@ -164,17 +180,21 @@ background-image: url(:/images/bg.jpg);</string>
        <property name="geometry">
         <rect>
          <x>30</x>
-         <y>750</y>
-         <width>691</width>
-         <height>75</height>
+         <y>690</y>
+         <width>621</width>
+         <height>67</height>
         </rect>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_8">
         <item>
-         <widget class="QLineEdit" name="question8"/>
+         <widget class="QLabel" name="question8">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
         </item>
         <item>
-         <widget class="QLineEdit" name="rightanswer8"/>
+         <widget class="QLineEdit" name="answer8"/>
         </item>
        </layout>
       </widget>
@@ -182,17 +202,21 @@ background-image: url(:/images/bg.jpg);</string>
        <property name="geometry">
         <rect>
          <x>30</x>
-         <y>850</y>
-         <width>691</width>
-         <height>75</height>
+         <y>780</y>
+         <width>621</width>
+         <height>67</height>
         </rect>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_9">
         <item>
-         <widget class="QLineEdit" name="question9"/>
+         <widget class="QLabel" name="question9">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
         </item>
         <item>
-         <widget class="QLineEdit" name="rightanswer9"/>
+         <widget class="QLineEdit" name="answer9"/>
         </item>
        </layout>
       </widget>
@@ -200,17 +224,21 @@ background-image: url(:/images/bg.jpg);</string>
        <property name="geometry">
         <rect>
          <x>30</x>
-         <y>950</y>
-         <width>691</width>
-         <height>75</height>
+         <y>870</y>
+         <width>621</width>
+         <height>67</height>
         </rect>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_10">
         <item>
-         <widget class="QLineEdit" name="question10"/>
+         <widget class="QLabel" name="question10">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
         </item>
         <item>
-         <widget class="QLineEdit" name="rightanswer10"/>
+         <widget class="QLineEdit" name="answer10"/>
         </item>
        </layout>
       </widget>
@@ -218,17 +246,21 @@ background-image: url(:/images/bg.jpg);</string>
        <property name="geometry">
         <rect>
          <x>30</x>
-         <y>1050</y>
-         <width>691</width>
-         <height>75</height>
+         <y>960</y>
+         <width>621</width>
+         <height>67</height>
         </rect>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_11">
         <item>
-         <widget class="QLineEdit" name="question11"/>
+         <widget class="QLabel" name="question11">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
         </item>
         <item>
-         <widget class="QLineEdit" name="rightanswer11"/>
+         <widget class="QLineEdit" name="answer11"/>
         </item>
        </layout>
       </widget>
@@ -236,48 +268,56 @@ background-image: url(:/images/bg.jpg);</string>
        <property name="geometry">
         <rect>
          <x>30</x>
-         <y>1150</y>
-         <width>691</width>
-         <height>75</height>
+         <y>1050</y>
+         <width>621</width>
+         <height>67</height>
         </rect>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_12">
         <item>
-         <widget class="QLineEdit" name="question12"/>
+         <widget class="QLabel" name="question12">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
         </item>
         <item>
-         <widget class="QLineEdit" name="rightanswer12"/>
+         <widget class="QLineEdit" name="answer12"/>
         </item>
        </layout>
       </widget>
-      <widget class="QPushButton" name="createOpenTask">
+      <widget class="QPushButton" name="endOpenTask">
        <property name="geometry">
         <rect>
-         <x>330</x>
-         <y>1270</y>
+         <x>290</x>
+         <y>1150</y>
          <width>102</width>
          <height>35</height>
         </rect>
        </property>
        <property name="text">
-        <string>Create task</string>
+        <string>End task</string>
        </property>
       </widget>
-      <widget class="QWidget" name="layoutWidget">
+      <widget class="QWidget" name="">
        <property name="geometry">
         <rect>
          <x>32</x>
-         <y>50</y>
-         <width>691</width>
-         <height>75</height>
+         <y>60</y>
+         <width>621</width>
+         <height>67</height>
         </rect>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout">
         <item>
-         <widget class="QLineEdit" name="question1"/>
+         <widget class="QLabel" name="question1">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
         </item>
         <item>
-         <widget class="QLineEdit" name="rightanswer1"/>
+         <widget class="QLineEdit" name="answer1"/>
         </item>
        </layout>
       </widget>

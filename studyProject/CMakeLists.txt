@@ -60,6 +60,9 @@ set(PROJECT_SOURCES
         opentask.h
         opentaskfactory.cpp
         opentaskfactory.h
+        opentaskanswerwindow.cpp
+        opentaskanswerwindow.h
+        opentaskanswerwindow.ui
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
