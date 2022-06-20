@@ -2,8 +2,8 @@
 #include "classroomfile.h"
 #include "mainwindow.h"
 #include "testfactory.h"
-#include "writewordfactory.h"
 #include "createtestwindow.h"
+#include "createopentaskwindow.h"
 
 
 TeacherWindow::TeacherWindow(QString id, QString name, QString surname, QWidget *parent) :
@@ -58,5 +58,12 @@ void TeacherWindow::on_createTest_clicked()
    testwindow->classroomName=ui->classroomName->text();
    testwindow->show();
 
+}
+
+
+void TeacherWindow::on_createOpenTask_clicked()
+{
+   createOpenTaskWindow* opentaskwindow = new createOpenTaskWindow();
+   opentaskwindow->show();
 }
 

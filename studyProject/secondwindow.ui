@@ -102,10 +102,18 @@
     </property>
     <layout class="QVBoxLayout" name="verticalLayout_2">
      <item>
-      <widget class="QLineEdit" name="teacherId"/>
+      <widget class="QLineEdit" name="teacherId">
+       <property name="placeholderText">
+        <string>Enter teacher id</string>
+       </property>
+      </widget>
      </item>
      <item>
-      <widget class="QLineEdit" name="classroomName"/>
+      <widget class="QLineEdit" name="classroomName">
+       <property name="placeholderText">
+        <string>Enter classroom name</string>
+       </property>
+      </widget>
      </item>
      <item>
       <widget class="QPushButton" name="connectToClass">

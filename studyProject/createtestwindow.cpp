@@ -13,6 +13,7 @@ createTestWindow::createTestWindow(QString testname, QWidget *parent) :
 {
     ui->setupUi(this);
     ui->testName->setText(testname);
+
 }
 
 createTestWindow::~createTestWindow()

@@ -15,6 +15,15 @@
         "qwerty": {
             "name": "com",
             "studentsId": [
+                0,
+                "kotocat"
+            ]
+        }
+    },
+    {
+        "marta": {
+            "name": "geometry",
+            "studentsId": [
                 0
             ]
         }

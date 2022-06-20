@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>createOpenTaskWindow</class>
+ <widget class="QWidget" name="createOpenTaskWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>788</width>
+    <height>1381</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+
+background-image: url(:/images/bg.jpg);</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>760</width>
+        <height>1353</height>
+       </rect>
+      </property>
+      <widget class="QLabel" name="openTaskName">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>10</y>
+         <width>411</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="layoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>130</y>
+         <width>691</width>
+         <height>75</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QLineEdit" name="lineEdit_3"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_4"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="layoutWidget_2">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>210</y>
+         <width>691</width>
+         <height>75</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QLineEdit" name="lineEdit_5"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_6"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="layoutWidget_3">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>290</y>
+         <width>691</width>
+         <height>75</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <widget class="QLineEdit" name="lineEdit_7"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_8"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="layoutWidget_4">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>370</y>
+         <width>691</width>
+         <height>75</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_5">
+        <item>
+         <widget class="QLineEdit" name="lineEdit_9"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_10"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="layoutWidget_5">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>450</y>
+         <width>691</width>
+         <height>75</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_6">
+        <item>
+         <widget class="QLineEdit" name="lineEdit_11"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_12"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="layoutWidget_6">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>530</y>
+         <width>691</width>
+         <height>75</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_7">
+        <item>
+         <widget class="QLineEdit" name="lineEdit_13"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_14"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="layoutWidget_7">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>610</y>
+         <width>691</width>
+         <height>75</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_8">
+        <item>
+         <widget class="QLineEdit" name="lineEdit_15"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_16"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="layoutWidget_8">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>690</y>
+         <width>691</width>
+         <height>75</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_9">
+        <item>
+         <widget class="QLineEdit" name="lineEdit_17"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_18"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="layoutWidget_9">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>770</y>
+         <width>691</width>
+         <height>75</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_10">
+        <item>
+         <widget class="QLineEdit" name="lineEdit_19"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_20"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="layoutWidget_10">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>850</y>
+         <width>691</width>
+         <height>75</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_11">
+        <item>
+         <widget class="QLineEdit" name="lineEdit_21"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_22"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="layoutWidget_11">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>930</y>
+         <width>691</width>
+         <height>75</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_12">
+        <item>
+         <widget class="QLineEdit" name="lineEdit_23"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_24"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="layoutWidget_12">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>1010</y>
+         <width>691</width>
+         <height>75</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_13">
+        <item>
+         <widget class="QLineEdit" name="lineEdit_25"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_26"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="layoutWidget_13">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>1090</y>
+         <width>691</width>
+         <height>75</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_14">
+        <item>
+         <widget class="QLineEdit" name="lineEdit_27"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_28"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="layoutWidget_14">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>1170</y>
+         <width>691</width>
+         <height>75</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_15">
+        <item>
+         <widget class="QLineEdit" name="lineEdit_29"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_30"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QPushButton" name="createOpenTask">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>1270</y>
+         <width>102</width>
+         <height>35</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Create task</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="">
+       <property name="geometry">
+        <rect>
+         <x>32</x>
+         <y>50</y>
+         <width>691</width>
+         <height>75</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QLineEdit" name="lineEdit"/>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_2"/>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

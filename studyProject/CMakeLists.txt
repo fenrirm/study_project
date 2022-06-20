@@ -39,20 +39,13 @@ set(PROJECT_SOURCES
         classroomfile.cpp
         classroomfile.h
         fileclass.h
-        studenttestwindow.cpp
-        studenttestwindow.h
-        studenttestwindow.ui
         createanswerwindow.cpp
         createanswerwindow.h
         createanswerwindow.ui
         test.cpp
         test.h
-        writeword.cpp
-        writeword.h
         testfactory.cpp
         testfactory.h
-        writewordfactory.cpp
-        writewordfactory.h
         createtestwindow.cpp
         createtestwindow.h
         createtestwindow.ui
@@ -60,7 +53,13 @@ set(PROJECT_SOURCES
         abstask.h
         taskfactory.cpp
         taskfactory.h
-
+        createopentaskwindow.cpp
+        createopentaskwindow.h
+        createopentaskwindow.ui
+        opentask.cpp
+        opentask.h
+        opentaskfactory.cpp
+        opentaskfactory.h
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)

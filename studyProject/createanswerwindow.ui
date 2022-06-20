@@ -14,7 +14,10 @@
    <string>Form</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-image: url(:/images/bg.jpg);</string>
+   <string notr="true">
+
+background-image: url(:/images/bg.jpg);
+</string>
   </property>
   <layout class="QGridLayout" name="gridLayout">
    <item row="0" column="0">
@@ -657,7 +660,7 @@
         <string>End test</string>
        </property>
       </widget>
-      <widget class="QWidget" name="">
+      <widget class="QWidget" name="layoutWidget">
        <property name="geometry">
         <rect>
          <x>30</x>
