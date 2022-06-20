@@ -158,7 +158,7 @@ void createTestWindow::on_createTest_clicked()
     test12->setAnswers(ui->answer12_1->text(),ui->answer12_2->text(),ui->answer12_3->text(),ui->answer12_4->text());
     test12->setCorrect(ui->rightanswer12->text());
     questions.push_back(test12);
-    QString path = "D:/oop/Qt/studyProject/tests.json";
+    QString path = "D:/Study/Term 2/OOOP/project/study_project/studyProject/tests.json";
     writeToFile(path, this, questions);
     this->close();
 

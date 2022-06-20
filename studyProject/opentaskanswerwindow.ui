@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>718</width>
-    <height>1243</height>
+    <width>743</width>
+    <height>633</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,16 +19,22 @@
   <layout class="QGridLayout" name="gridLayout">
    <item row="0" column="0">
     <widget class="QScrollArea" name="scrollArea">
+     <property name="verticalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOn</enum>
+     </property>
+     <property name="sizeAdjustPolicy">
+      <enum>QAbstractScrollArea::AdjustToContentsOnFirstShow</enum>
+     </property>
      <property name="widgetResizable">
-      <bool>true</bool>
+      <bool>false</bool>
      </property>
      <widget class="QWidget" name="scrollAreaWidgetContents">
       <property name="geometry">
        <rect>
         <x>0</x>
-        <y>0</y>
-        <width>690</width>
-        <height>1215</height>
+        <y>-610</y>
+        <width>698</width>
+        <height>1223</height>
        </rect>
       </property>
       <widget class="QLabel" name="opentaskName">
@@ -299,7 +305,7 @@
         <string>End task</string>
        </property>
       </widget>
-      <widget class="QWidget" name="">
+      <widget class="QWidget" name="layoutWidget">
        <property name="geometry">
         <rect>
          <x>32</x>

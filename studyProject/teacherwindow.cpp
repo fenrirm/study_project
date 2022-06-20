@@ -59,7 +59,7 @@ void TeacherWindow::on_createClass_clicked()
    u.setId(nullptr);
    u.setIsTeacher(nullptr);
    u.setPassword(nullptr);
-   QString path="D:/oop/Qt/studyProject/classroom.json";
+   QString path="D:/Study/Term 2/OOOP/project/study_project/studyProject/classroom.json";
    classroomfile writeclassroom;
    writeclassroom.writeToFile(path, nullptr, this, u, classroom);
 }
@@ -96,6 +96,25 @@ void TeacherWindow::on_ShowClassTasks_clicked()
     {
         QByteArray bytes = file.readAll();
         file.close();
+        QJsonDocument doc (QJsonDocument::fromJson(bytes));
+        QJsonArray arr= doc.array();
+        foreach(const QJsonValue& value, arr)
+        {
+            QJsonObject obj = value.toObject();
+            if((obj[obj.keys()[0]].toObject()["clasroomName"].toString()==ui->ClassNameToShow->text() )&&
+                   (obj[obj.keys()[0]].toObject()["teacheID"].toString() == ui->id->text())){
+                QLabel::QWidget* label= new QLabel(obj.keys()[0]);
+                ui->TaskLayout->addWidget(label);
+                label->show();
+            }
+        }
+    }
+
+    QFile file1("D:/Study/Term 2/OOOP/project/study_project/studyProject/opentasks.json");
+    if(file1.open(QIODevice::ReadOnly))
+    {
+        QByteArray bytes = file1.readAll();
+        file1.close();
         QJsonDocument doc (QJsonDocument::fromJson(bytes));
         QJsonArray arr= doc.array();
         foreach(const QJsonValue& value, arr)

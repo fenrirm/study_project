@@ -1,54 +1,10 @@
 [
     {
         "marta": {
-            "name": "algebra",
+            "name": "qwe",
             "studentsId": [
                 0,
-                "karina",
-                "karina",
-                "karina",
-                "karina"
-            ]
-        }
-    },
-    {
-        "qwerty": {
-            "name": "com",
-            "studentsId": [
-                0,
-<<<<<<< HEAD
-                "kotocat"
-=======
-                "karina"
->>>>>>> d188dd5ab03aaf36a217f098a28373241ceb46fb
-            ]
-        }
-    },
-    {
-        "marta": {
-<<<<<<< HEAD
-            "name": "geometry",
-=======
-            "name": "class1",
-            "studentsId": [
-                0
-            ]
-        }
-    },
-    {
-        "marta": {
-            "name": "class2",
-            "studentsId": [
-                0
-            ]
-        }
-    },
-    {
-        "marta": {
-            "name": "class3",
->>>>>>> d188dd5ab03aaf36a217f098a28373241ceb46fb
-            "studentsId": [
-                0
+                "fenrirm"
             ]
         }
     }

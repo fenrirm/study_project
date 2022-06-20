@@ -1,7 +1,7 @@
 #include "createanswerwindow.h"
 #include "ui_createanswerwindow.h"
 #include "QFile"
-
+#include <QMessageBox>
 createanswerwindow::createanswerwindow(QString nameOfTask,QWidget *parent) :
     QWidget(parent),
     ui(new Ui::createanswerwindow)
@@ -158,6 +158,9 @@ void createanswerwindow::on_endTask_clicked()
     if(ans[11]==ui->rightanswer12->text()){
         mark++;
     }
-    qDebug()<<"Mark= "<<mark;
+    QString mark_str = QString::number(mark);
+
+    QMessageBox::about(this,"MARK", mark_str);
+    this->close();
 }
 

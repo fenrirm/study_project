@@ -141,7 +141,7 @@ void createOpenTaskWindow::on_createOpenTask_clicked()
     opentask12->setTestText(ui->question12->text());
     opentask12->setCorrect(ui->rightanswer12->text());
     questions.push_back(opentask12);
-    QString path = "D:/oop/Qt/studyProject/opentasks.json";
+    QString path = "D:/Study/Term 2/OOOP/project/study_project/studyProject/opentasks.json";
     writeToFile(path, this, questions);
     this->close();
 }

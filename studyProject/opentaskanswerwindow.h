@@ -12,8 +12,12 @@ class OpenTaskAnswerWindow : public QWidget
     Q_OBJECT
 
 public:
-    explicit OpenTaskAnswerWindow(QWidget *parent = nullptr);
+    explicit OpenTaskAnswerWindow(QString testname,QWidget *parent = nullptr);
+    std::vector<QString> ans;
     ~OpenTaskAnswerWindow();
+
+private slots:
+    void on_endOpenTask_clicked();
 
 private:
     Ui::OpenTaskAnswerWindow *ui;
