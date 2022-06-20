@@ -1,125 +1,126 @@
 [
     {
-        "test2": {
+        "newTask": {
+            "clasroomName": "algebra",
             "question0": {
                 "answers": [
-                    "ans1",
-                    "ans2",
-                    "ans2",
-                    "ans2"
+                    "Some",
+                    "Some",
+                    "Some",
+                    "Some"
                 ],
-                "questionText": "question1",
-                "rightanswer": "ans1"
+                "questionText": "Some",
+                "rightanswer": "Some"
             },
             "question1": {
                 "answers": [
-                    "ans1",
-                    "ans2",
-                    "ans3",
-                    "ans4"
+                    "Some",
+                    "Some",
+                    "Some",
+                    "Some"
                 ],
-                "questionText": "question2",
-                "rightanswer": "ans4"
+                "questionText": "Some",
+                "rightanswer": "Some"
             },
             "question10": {
                 "answers": [
-                    "ans1",
-                    "ans2",
-                    "ans3",
-                    "ans4"
+                    "Some",
+                    "Some",
+                    "Some",
+                    "Some"
                 ],
-                "questionText": "question11",
-                "rightanswer": "ans1"
+                "questionText": "Some",
+                "rightanswer": "Some"
             },
             "question11": {
                 "answers": [
-                    "ans1",
-                    "ans2",
-                    "ans3",
-                    "ans4"
+                    "Some",
+                    "Some",
+                    "Some",
+                    "Some"
                 ],
-                "questionText": "question12",
-                "rightanswer": "ans4"
+                "questionText": "Some",
+                "rightanswer": "Some"
             },
             "question2": {
                 "answers": [
-                    "ans1",
-                    "ans2",
-                    "ans3",
-                    "ans4"
+                    "Some",
+                    "Some",
+                    "Some",
+                    "Some"
                 ],
-                "questionText": "question3",
-                "rightanswer": "ans3"
+                "questionText": "Some",
+                "rightanswer": "Some"
             },
             "question3": {
                 "answers": [
-                    "ans1",
-                    "ans2",
-                    "ans3",
-                    "ans4"
+                    "Some",
+                    "Some",
+                    "Some",
+                    "Some"
                 ],
-                "questionText": "question4",
-                "rightanswer": "ans2"
+                "questionText": "Some",
+                "rightanswer": "Some"
             },
             "question4": {
                 "answers": [
-                    "ans1",
-                    "ans2",
-                    "ans3",
-                    "ans4"
+                    "Some",
+                    "Some",
+                    "Some",
+                    "Some"
                 ],
-                "questionText": "question5",
-                "rightanswer": "ans3"
+                "questionText": "Some",
+                "rightanswer": "Some"
             },
             "question5": {
                 "answers": [
-                    "ans1",
-                    "ans2",
-                    "ans3",
-                    "ans4"
+                    "Some",
+                    "Some",
+                    "Some",
+                    "Some"
                 ],
-                "questionText": "question6",
-                "rightanswer": "ans4"
+                "questionText": "Some",
+                "rightanswer": "Some"
             },
             "question6": {
                 "answers": [
-                    "ans1",
-                    "ans2",
-                    "ans3",
-                    "ans4"
+                    "Some",
+                    "Some",
+                    "Some",
+                    "Some"
                 ],
-                "questionText": "question7",
-                "rightanswer": "ans2"
+                "questionText": "Some",
+                "rightanswer": "Some"
             },
             "question7": {
                 "answers": [
-                    "ans1",
-                    "ans2",
-                    "ans3",
-                    "ans4"
+                    "Some",
+                    "Some",
+                    "Some",
+                    "Some"
                 ],
-                "questionText": "question8",
-                "rightanswer": "ans2"
+                "questionText": "Some",
+                "rightanswer": "Some"
             },
             "question8": {
                 "answers": [
-                    "ans1",
-                    "ans2",
-                    "ans3",
-                    "ans4"
+                    "Some",
+                    "Some",
+                    "Some",
+                    "Some"
                 ],
-                "questionText": "question9",
-                "rightanswer": "ans3"
+                "questionText": "Some",
+                "rightanswer": "Some"
             },
             "question9": {
                 "answers": [
-                    "ans1",
-                    "ans2",
-                    "ans3",
-                    "ans4"
+                    "Some",
+                    "Some",
+                    "Some",
+                    "Some"
                 ],
-                "questionText": "question10",
-                "rightanswer": "ans4"
+                "questionText": "Some",
+                "rightanswer": "Some"
             },
             "teacheID": "marta"
         }

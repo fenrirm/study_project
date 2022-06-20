@@ -31,7 +31,8 @@ private slots:
 
     void on_createTest_clicked();
 
-    void on_createOpenTask_clicked();
+    void on_ShowClassTasks_clicked();
+
 
 private:
     Ui::TeacherWindow *ui;
