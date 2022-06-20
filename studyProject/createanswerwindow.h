@@ -17,7 +17,11 @@ class createanswerwindow : public QWidget
 
 public:
     explicit createanswerwindow(QString nameOfTask,QWidget *parent = nullptr);
+    std::vector<QString> ans;
     ~createanswerwindow();
+
+private slots:
+    void on_endTask_clicked();
 
 private:
     Ui::createanswerwindow *ui;
