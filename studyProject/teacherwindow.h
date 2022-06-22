@@ -32,6 +32,8 @@ private slots:
     void on_ShowClassTasks_clicked();
     void on_createOpenTask_clicked();
 
+    void on_showStudents_clicked();
+
 private:
     Ui::TeacherWindow *ui;
 };

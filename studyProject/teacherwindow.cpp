@@ -201,3 +201,42 @@ void TeacherWindow::on_createOpenTask_clicked()
 
 }
 
+
+void TeacherWindow::on_showStudents_clicked()
+{
+     QString path = "D:/oop/Qt/studyProject/classroom.json";
+    QFile file(path);
+    bool isUnic=true;
+    if(file.open(QIODevice::ReadOnly))
+    {
+        QByteArray bytes = file.readAll();
+        file.close();
+        QJsonDocument doc (QJsonDocument::fromJson(bytes));
+        QJsonArray arr= doc.array();
+        foreach(const QJsonValue& value, arr)
+        {
+            QJsonObject obj = value.toObject();
+
+            if((obj.keys()[0]==ui->className->text() ))
+            {
+               // qDebug()<<"if";
+                 isUnic=false;
+                foreach(const QJsonValue& value1,  obj[obj.keys()[0]].toObject()["studentsId"].toArray())
+                {
+                   QLabel::QWidget* label= new QLabel(value1.toString());
+                    ui->studentsLayout->addWidget(label);
+                     label->show();
+                }
+
+            }
+
+        }
+        if(isUnic)
+        {
+            QMessageBox::critical(this,"","You have entered wrong classroom name or this classroom doesn't exist");
+
+        }
+    }
+
+}
+

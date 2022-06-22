@@ -1,27 +1,10 @@
 [
     {
         "algebra": {
-            "classroomId": "kara",
+            "classroomId": "marta",
             "studentsId": [
                 0,
                 "fenrirm"
-            ]
-        }
-    },
-    {
-        "geometry": {
-            "classroomId": "kara",
-            "studentsId": [
-                0,
-                "fenrirm"
-            ]
-        }
-    },
-    {
-        "oop": {
-            "classroomId": "kara",
-            "studentsId": [
-                0
             ]
         }
     }

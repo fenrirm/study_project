@@ -1,18 +1,26 @@
 [
     {
         "fenrirm": {
-            "name": "marta",
-            "pass": "1111",
+            "name": "Marta",
+            "pass": "",
             "post": "false",
-            "surname": "shevchenko"
+            "surname": "Shevchenko"
         }
     },
     {
-        "kara": {
-            "name": "karina",
-            "pass": "1111",
+        "1": {
+            "name": "1",
+            "pass": "",
+            "post": "false",
+            "surname": "1"
+        }
+    },
+    {
+        "marta": {
+            "name": "marta",
+            "pass": "marta",
             "post": "true",
-            "surname": "margaryan"
+            "surname": "marta"
         }
     }
 ]

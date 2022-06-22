@@ -4,25 +4,25 @@
             "clasroomName": "algebra",
             "question0": {
                 "answers": [
-                    "ans1",
-                    "ans2",
-                    "ans2",
-                    "ans2"
+                    "marta",
+                    "marta",
+                    "marta",
+                    "marta"
                 ],
-                "questionText": "1. Question1",
-                "rightanswer": "ans3",
+                "questionText": "marta",
+                "rightanswer": "marta",
                 "studentsGrades": {
                 }
             },
             "question1": {
                 "answers": [
-                    "1. Question1",
-                    "1. Question1",
-                    "1. Question1",
-                    "1. Question1"
+                    "",
+                    "",
+                    "",
+                    ""
                 ],
-                "questionText": "1. Question1",
-                "rightanswer": "1. Question1",
+                "questionText": "",
+                "rightanswer": "",
                 "studentsGrades": {
                 }
             },
@@ -52,60 +52,60 @@
             },
             "question2": {
                 "answers": [
-                    "1. Question1",
-                    "1. Question1",
-                    "1. Question1",
-                    "1. Question1"
+                    "",
+                    "",
+                    "",
+                    ""
                 ],
-                "questionText": "1. Question1",
-                "rightanswer": "1. Question1",
+                "questionText": "",
+                "rightanswer": "",
                 "studentsGrades": {
                 }
             },
             "question3": {
                 "answers": [
-                    "1. Question1",
-                    "1. Question1",
-                    "1. Question1",
-                    "1. Question1"
+                    "",
+                    "",
+                    "",
+                    ""
                 ],
-                "questionText": "1. Question1",
-                "rightanswer": "1. Question1",
+                "questionText": "",
+                "rightanswer": "",
                 "studentsGrades": {
                 }
             },
             "question4": {
                 "answers": [
-                    "1. Question1",
-                    "1. Question1",
-                    "1. Question1",
-                    "1. Question1"
+                    "",
+                    "",
+                    "",
+                    ""
                 ],
-                "questionText": "1. Question1",
-                "rightanswer": "1. Question1",
+                "questionText": "",
+                "rightanswer": "",
                 "studentsGrades": {
                 }
             },
             "question5": {
                 "answers": [
-                    "1. Question1",
-                    "1. Question1",
-                    "1. Question1",
-                    "1. Question1"
+                    "",
+                    "",
+                    "",
+                    ""
                 ],
-                "questionText": "1. Question1",
-                "rightanswer": "1. Question1",
+                "questionText": "",
+                "rightanswer": "",
                 "studentsGrades": {
                 }
             },
             "question6": {
                 "answers": [
-                    "1. Question1",
-                    "1. Question1",
-                    "1. Question1",
+                    "",
+                    "",
+                    "",
                     ""
                 ],
-                "questionText": "1. Question1",
+                "questionText": "",
                 "rightanswer": "",
                 "studentsGrades": {
                 }
@@ -147,9 +147,9 @@
                 }
             },
             "studentsGrades": {
-                "fenrirm": "8"
+                "fenrirm": "11"
             },
-            "teacheID": "kara"
+            "teacheID": "marta"
         }
     }
 ]

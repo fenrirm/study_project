@@ -118,7 +118,7 @@ void OpenTaskAnswerWindow::on_endOpenTask_clicked()
     }
     QString mark_str = QString::number(mark);
     QFile f("D:/oop/Qt/studyProject/opentasks.json");
-    QMessageBox::about(this,"MARK", mark_str);
+    //QMessageBox::about(this,"MARK", mark_str);
     if(f.open(QIODevice::ReadOnly))
     {
         QByteArray bytes = f.readAll();

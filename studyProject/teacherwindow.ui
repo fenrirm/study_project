@@ -281,10 +281,10 @@ background-image: url(:/images/bg.jpg);
    <widget class="QLineEdit" name="ClassNameToShow">
     <property name="geometry">
      <rect>
-      <x>330</x>
-      <y>550</y>
-      <width>131</width>
-      <height>24</height>
+      <x>370</x>
+      <y>540</y>
+      <width>161</width>
+      <height>31</height>
      </rect>
     </property>
     <property name="placeholderText">
@@ -294,10 +294,10 @@ background-image: url(:/images/bg.jpg);
    <widget class="QPushButton" name="ShowClassTasks">
     <property name="geometry">
      <rect>
-      <x>330</x>
+      <x>370</x>
       <y>580</y>
-      <width>131</width>
-      <height>24</height>
+      <width>151</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="text">
@@ -328,6 +328,62 @@ background-image: url(:/images/bg.jpg);
     </property>
     <property name="text">
      <string>Tasks</string>
+    </property>
+   </widget>
+   <widget class="QScrollArea" name="scrollArea">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>330</y>
+      <width>201</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="scrollAreaWidgetContents_3">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>199</width>
+       <height>169</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3">
+      <item row="0" column="0">
+       <widget class="QWidget" name="verticalWidget_3" native="true">
+        <layout class="QVBoxLayout" name="studentsLayout"/>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QLineEdit" name="className">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>510</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>Enter a class name</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="showStudents">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>560</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Show students</string>
     </property>
    </widget>
   </widget>
