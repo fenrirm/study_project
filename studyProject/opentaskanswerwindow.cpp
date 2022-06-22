@@ -12,7 +12,7 @@ OpenTaskAnswerWindow::OpenTaskAnswerWindow(QString testname, QWidget *parent) :
 {
     ui->setupUi(this);
 
-    QFile file("D:/Study/Term 2/OOOP/project/study_project/studyProject/opentasks.json");
+    QFile file("D:/oop/Qt/studyProject/opentasks.json");
     if(file.open(QIODevice::ReadOnly))
     {
         QByteArray bytes = file.readAll();

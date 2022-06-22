@@ -18,6 +18,7 @@ class createanswerwindow : public QWidget
 public:
     explicit createanswerwindow(QString nameOfTask,QWidget *parent = nullptr);
     std::vector<QString> ans;
+    QString studentId;
     ~createanswerwindow();
 
 private slots:

@@ -22,18 +22,14 @@ class TeacherWindow : public QMainWindow
 
 public:
     explicit TeacherWindow(QString id, QString name, QString surname, QWidget *parent = nullptr);
+    bool checkUnic(const QString &path,QString NametoCheck);
     ~TeacherWindow();
 
 private slots:
     void on_createClass_clicked();
-
     void on_logout_clicked();
-
     void on_createTest_clicked();
-
     void on_ShowClassTasks_clicked();
-
-
     void on_createOpenTask_clicked();
 
 private:

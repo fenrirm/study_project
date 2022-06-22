@@ -4,6 +4,7 @@
 #include <QDebug>
 #include "abstask.h"
 #include "createtestwindow.h"
+#include "qjsonobject.h"
 
 class Test: public AbsTask
 {
@@ -34,10 +35,12 @@ public:
           answers[2]=Answer3;
           answers[3]=Answer4;
       }
+
       QString getAnswer(int numOfAnswer)override
       {
           return this->answers[numOfAnswer];
       }
+
       void createTask() override
       {
 

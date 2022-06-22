@@ -23,7 +23,7 @@ TeacherWindow::TeacherWindow(QString id, QString name, QString surname, QWidget 
 //    QLabel::QWidget* label= new QLabel("Some text");
 //    ui->ClassLayout->addWidget(label);
 //    label->show();
-    QFile file("D:/Study/Term 2/OOOP/project/study_project/studyProject/classroom.json");
+    QFile file("D:/oop/Qt/studyProject/classroom.json");
     if(file.open(QIODevice::ReadOnly))
     {
         QByteArray bytes = file.readAll();
@@ -33,8 +33,8 @@ TeacherWindow::TeacherWindow(QString id, QString name, QString surname, QWidget 
         foreach(const QJsonValue& value, arr)
         {
             QJsonObject obj = value.toObject();
-            if(obj.keys()[0]==ui->id->text()){
-                QLabel::QWidget* label= new QLabel(obj[obj.keys()[0]].toObject()["name"].toString());
+            if(obj[obj.keys()[0]].toObject()["classroomId"].toString()==ui->id->text()){
+                QLabel::QWidget* label= new QLabel(obj.keys()[0]);
                 ui->ClassLayout->addWidget(label);
                 label->show();
             }
@@ -59,7 +59,7 @@ void TeacherWindow::on_createClass_clicked()
    u.setId(nullptr);
    u.setIsTeacher(nullptr);
    u.setPassword(nullptr);
-   QString path="D:/Study/Term 2/OOOP/project/study_project/studyProject/classroom.json";
+   QString path="D:/oop/Qt/studyProject/classroom.json";
    classroomfile writeclassroom;
    writeclassroom.writeToFile(path, nullptr, this, u, classroom);
 }
@@ -72,13 +72,54 @@ void TeacherWindow::on_logout_clicked()
     this->close();
 }
 
+bool TeacherWindow::checkUnic(const QString &path,QString NametoCheck)
+{
+    QFile file(path);
+    if(file.open(QIODevice::ReadOnly))
+    {
+        QByteArray bytes = file.readAll();
+        file.close();
+        QJsonDocument doc (QJsonDocument::fromJson(bytes));
+        QJsonArray arr= doc.array();
+        foreach(const QJsonValue& value, arr)
+        {
+            QJsonObject obj = value.toObject();
+            if(obj.keys()[0] == NametoCheck)
+            {
+                return false;
+            }
+        }
+
+    }
+    return true;
+}
 
 void TeacherWindow::on_createTest_clicked()
 {
    createTestWindow* testwindow = new createTestWindow(ui->testName->text());
    testwindow->teacherId=ui->id->text();
    testwindow->classroomName=ui->classroomName->text();
-   testwindow->show();
+   QString path = "D:/oop/Qt/studyProject/tests.json";
+   bool unic = checkUnic(path,ui->testName->text());
+   QFile f(path);
+   if(f.open(QIODevice::ReadOnly))
+   {
+       QByteArray bytes = f.readAll();
+       f.close();
+       QJsonDocument doc (QJsonDocument::fromJson(bytes));
+       QJsonArray arr = doc.array();
+      QJsonDocument doc2(arr);
+      QFile file (path);
+      if(unic)
+      {
+          testwindow->show();
+      }
+      else
+      {
+          QMessageBox::critical(this,"","The test with the same name is already exist!");
+      }
+   }
+
 
 }
 
@@ -91,7 +132,7 @@ void TeacherWindow::on_ShowClassTasks_clicked()
         delete widget;
     }
 
-    QFile file("D:/Study/Term 2/OOOP/project/study_project/studyProject/tests.json");
+    QFile file("D:/oop/Qt/studyProject/tests.json");
     if(file.open(QIODevice::ReadOnly))
     {
         QByteArray bytes = file.readAll();
@@ -110,7 +151,7 @@ void TeacherWindow::on_ShowClassTasks_clicked()
         }
     }
 
-    QFile file1("D:/Study/Term 2/OOOP/project/study_project/studyProject/opentasks.json");
+    QFile file1("D:/oop/Qt/studyProject/opentasks.json");
     if(file1.open(QIODevice::ReadOnly))
     {
         QByteArray bytes = file1.readAll();
@@ -137,6 +178,26 @@ void TeacherWindow::on_createOpenTask_clicked()
     createOpenTaskWindow* opentaskwindow = new createOpenTaskWindow(ui->openTaskName->text());
     opentaskwindow->teacherId=ui->id->text();
     opentaskwindow->classroomName=ui->classroomName->text();
-    opentaskwindow->show();
+    QString path = "D:/oop/Qt/studyProject/opentasks.json";
+    bool unic = checkUnic(path,ui->openTaskName->text());
+    QFile f(path);
+    if(f.open(QIODevice::ReadOnly))
+    {
+        QByteArray bytes = f.readAll();
+        f.close();
+        QJsonDocument doc (QJsonDocument::fromJson(bytes));
+        QJsonArray arr = doc.array();
+       QJsonDocument doc2(arr);
+       QFile file (path);
+       if(unic)
+       {
+           opentaskwindow->show();
+       }
+       else
+       {
+           QMessageBox::critical(this,"","The test with the same name is already exist!");
+       }
+    }
+
 }
 

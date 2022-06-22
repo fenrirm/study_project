@@ -1,218 +1,56 @@
 [
     {
         "opentask1": {
-            "clasroomName": "algebra",
+            "clasroomName": "geometry",
             "question0": {
-                "questionText": "sometext",
-                "rightanswer": "sometext"
+                "questionText": "ffefe",
+                "rightanswer": "fefe"
             },
             "question1": {
-                "questionText": "sometext",
-                "rightanswer": "sometext"
+                "questionText": "fe",
+                "rightanswer": "fef"
             },
             "question10": {
-                "questionText": "sometext",
-                "rightanswer": "sometext"
+                "questionText": "",
+                "rightanswer": ""
             },
             "question11": {
-                "questionText": "sometext",
-                "rightanswer": "sometext"
+                "questionText": "",
+                "rightanswer": ""
             },
             "question2": {
-                "questionText": "sometext",
-                "rightanswer": "sometext"
+                "questionText": "efewe",
+                "rightanswer": "beg"
             },
             "question3": {
-                "questionText": "sometext",
-                "rightanswer": "sometext"
+                "questionText": "refr",
+                "rightanswer": ""
             },
             "question4": {
-                "questionText": "sometext",
-                "rightanswer": "sometext"
+                "questionText": "",
+                "rightanswer": ""
             },
             "question5": {
-                "questionText": "sometext",
-                "rightanswer": "sometext"
+                "questionText": "",
+                "rightanswer": ""
             },
             "question6": {
-                "questionText": "sometext",
-                "rightanswer": "sometext"
+                "questionText": "",
+                "rightanswer": ""
             },
             "question7": {
-                "questionText": "sometext",
-                "rightanswer": "sometext"
+                "questionText": "",
+                "rightanswer": ""
             },
             "question8": {
-                "questionText": "sometext",
-                "rightanswer": "sometext"
+                "questionText": "",
+                "rightanswer": ""
             },
             "question9": {
-                "questionText": "sometext",
-                "rightanswer": "sometext"
+                "questionText": "",
+                "rightanswer": ""
             },
-            "teacheID": "marta"
-        }
-    },
-    {
-        "opentask2": {
-            "clasroomName": "algebra",
-            "question0": {
-                "questionText": "someshit",
-                "rightanswer": "someshit"
-            },
-            "question1": {
-                "questionText": "someshit",
-                "rightanswer": "someshit"
-            },
-            "question10": {
-                "questionText": "someshit",
-                "rightanswer": "someshit"
-            },
-            "question11": {
-                "questionText": "someshit",
-                "rightanswer": "someshit"
-            },
-            "question2": {
-                "questionText": "someshit",
-                "rightanswer": "someshit"
-            },
-            "question3": {
-                "questionText": "someshit",
-                "rightanswer": "someshit"
-            },
-            "question4": {
-                "questionText": "someshit",
-                "rightanswer": "someshit"
-            },
-            "question5": {
-                "questionText": "someshit",
-                "rightanswer": "someshit"
-            },
-            "question6": {
-                "questionText": "someshit",
-                "rightanswer": "someshit"
-            },
-            "question7": {
-                "questionText": "someshit",
-                "rightanswer": "someshit"
-            },
-            "question8": {
-                "questionText": "someshit",
-                "rightanswer": "someshit"
-            },
-            "question9": {
-                "questionText": "someshit",
-                "rightanswer": "someshit"
-            },
-            "teacheID": "marta"
-        }
-    },
-    {
-        "opentas3": {
-            "clasroomName": "algebra",
-            "question0": {
-                "questionText": "someshit",
-                "rightanswer": "someshit"
-            },
-            "question1": {
-                "questionText": "someshit",
-                "rightanswer": "someshit"
-            },
-            "question10": {
-                "questionText": "someshit",
-                "rightanswer": "someshit"
-            },
-            "question11": {
-                "questionText": "someshit",
-                "rightanswer": "someshit"
-            },
-            "question2": {
-                "questionText": "someshit",
-                "rightanswer": "someshit"
-            },
-            "question3": {
-                "questionText": "someshit",
-                "rightanswer": "someshit"
-            },
-            "question4": {
-                "questionText": "someshit",
-                "rightanswer": "someshit"
-            },
-            "question5": {
-                "questionText": "someshit",
-                "rightanswer": "someshit"
-            },
-            "question6": {
-                "questionText": "someshit",
-                "rightanswer": "someshit"
-            },
-            "question7": {
-                "questionText": "someshit",
-                "rightanswer": "someshit"
-            },
-            "question8": {
-                "questionText": "someshit",
-                "rightanswer": "someshit"
-            },
-            "question9": {
-                "questionText": "someshit",
-                "rightanswer": "someshit"
-            },
-            "teacheID": "marta"
-        }
-    },
-    {
-        "task1": {
-            "clasroomName": "qwe",
-            "question0": {
-                "questionText": "openTask1",
-                "rightanswer": "openTask1"
-            },
-            "question1": {
-                "questionText": "openTask2",
-                "rightanswer": "openTask2"
-            },
-            "question10": {
-                "questionText": "openTask11",
-                "rightanswer": "openTask11"
-            },
-            "question11": {
-                "questionText": "openTask12",
-                "rightanswer": "openTask12"
-            },
-            "question2": {
-                "questionText": "openTask3",
-                "rightanswer": "openTask3"
-            },
-            "question3": {
-                "questionText": "openTask4",
-                "rightanswer": "openTask4"
-            },
-            "question4": {
-                "questionText": "openTask5",
-                "rightanswer": "openTask5"
-            },
-            "question5": {
-                "questionText": "openTask6",
-                "rightanswer": "openTask6"
-            },
-            "question6": {
-                "questionText": "openTask7",
-                "rightanswer": "openTask7"
-            },
-            "question7": {
-                "questionText": "openTask8",
-                "rightanswer": "openTask8"
-            },
-            "question8": {
-                "questionText": "openTask9",
-                "rightanswer": "openTask9"
-            },
-            "question9": {
-                "questionText": "openTask10",
-                "rightanswer": "openTask10"
-            },
-            "teacheID": "marta"
+            "teacheID": "kara"
         }
     }
 ]

@@ -41,7 +41,7 @@ MainWindow::~MainWindow()
 // sign up realization
 void MainWindow::on_signup_clicked()
 {
-    QString path = "D:/Study/Term 2/OOOP/project/study_project/studyProject/user.json";
+    QString path = "D:/oop/Qt/studyProject/user.json";
     QString flag;
     if(ui->Teacher->isChecked())
     {
@@ -67,7 +67,7 @@ void MainWindow::on_signup_clicked()
 // log in realization
 void MainWindow::on_LogIn_clicked()
 {
-    QString path = "D:/Study/Term 2/OOOP/project/study_project/studyProject/user.json";
+    QString path = "D:/oop/Qt/studyProject/user.json";
     userfile readuser;
     readuser.readFromFile(path, this, nullptr, ui->Id->text(),ui->Password->text());
 }

@@ -26,6 +26,8 @@ private slots:
 
     void on_DoTask_clicked();
 
+    void on_showGrades_clicked();
+
 private:
     Ui::secondwindow *ui;
 };

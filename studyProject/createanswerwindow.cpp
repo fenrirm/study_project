@@ -2,13 +2,16 @@
 #include "ui_createanswerwindow.h"
 #include "QFile"
 #include <QMessageBox>
-createanswerwindow::createanswerwindow(QString nameOfTask,QWidget *parent) :
+#include <QJsonDocument>
+#include <QJsonArray>
+
+createanswerwindow::createanswerwindow(QString nameOfTask, QWidget *parent) :
     QWidget(parent),
     ui(new Ui::createanswerwindow)
 {
     ui->setupUi(this);
 
-    QFile file("D:/Study/Term 2/OOOP/project/study_project/studyProject/tests.json");
+    QFile file("D:/oop/Qt/studyProject/tests.json");
     if(file.open(QIODevice::ReadOnly))
     {
         QByteArray bytes = file.readAll();
@@ -159,8 +162,40 @@ void createanswerwindow::on_endTask_clicked()
         mark++;
     }
     QString mark_str = QString::number(mark);
-
-    QMessageBox::about(this,"MARK", mark_str);
+    QFile f("D:/oop/Qt/studyProject/tests.json");
+    if(f.open(QIODevice::ReadOnly))
+    {
+        QByteArray bytes = f.readAll();
+        f.close();
+        QMessageBox::about(this,"MARK", mark_str);
+        QJsonObject obj;
+        QJsonDocument doc (QJsonDocument::fromJson(bytes));
+        QJsonArray arr = doc.array();
+        for(int i=0; i<arr.size(); i++)
+        {
+            QJsonObject obj = arr[i].toObject();
+            if(obj.keys()[0]==ui->taskName->text())
+            {
+                QJsonObject grades = obj[obj.keys()[0]].toObject()["studentsGrades"].toObject();
+                grades.insert(studentId, mark_str);
+                QJsonObject obj3 = obj[obj.keys()[0]].toObject();
+                obj3["studentsGrades"] = grades;
+                obj[obj.keys()[0]]=obj3;
+                arr[i]=obj;
+                break;
+            }
+        }
+        QJsonDocument doc2(arr);
+        if(f.open(QIODevice::WriteOnly))
+       {
+            f.write(doc2.toJson());
+            f.close();
+        }
+        else
+        {
+            QMessageBox::critical(this,"","file opened failed: ");
+        }
+    }
     this->close();
 }
 

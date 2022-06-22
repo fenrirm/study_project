@@ -2,65 +2,17 @@
     {
         "fenrirm": {
             "name": "marta",
-            "pass": "1234",
+            "pass": "1111",
             "post": "false",
             "surname": "shevchenko"
         }
     },
     {
-        "karaMarg": {
-            "name": "Karina",
+        "kara": {
+            "name": "karina",
             "pass": "1111",
             "post": "true",
-            "surname": "Margaryan"
-        }
-    },
-    {
-        "qwery": {
-            "name": "artem",
-            "pass": "0000",
-            "post": "false",
-            "surname": "pylypenko"
-        }
-    },
-    {
-        "kotocat": {
-            "name": "stepan",
-            "pass": "kotocat",
-            "post": "false",
-            "surname": "ilchuk"
-        }
-    },
-    {
-        "nikana161": {
-            "name": "Tetyana",
-            "pass": "1122334455",
-            "post": "true",
-            "surname": "Chupylko"
-        }
-    },
-    {
-        "marta": {
-            "name": "marta",
-            "pass": "marta",
-            "post": "true",
-            "surname": "marta"
-        }
-    },
-    {
-        "karina": {
-            "name": "karina",
-            "pass": "karina",
-            "post": "false",
-            "surname": "karina"
-        }
-    },
-    {
-        "qwerty": {
-            "name": "qwerty",
-            "pass": "qwerty",
-            "post": "true",
-            "surname": "qwerty"
+            "surname": "margaryan"
         }
     }
 ]

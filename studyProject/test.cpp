@@ -14,5 +14,6 @@ Test::Test(QString QuestionText, QString CorrectAnswer, QString Answer1,
     answers[1]=Answer2;
     answers[2]=Answer3;
     answers[3]=Answer4;
+
 }
 

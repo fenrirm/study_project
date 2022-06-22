@@ -1,7 +1,16 @@
 [
     {
-        "marta": {
-            "name": "qwe",
+        "algebra": {
+            "classroomId": "kara",
+            "studentsId": [
+                0,
+                "fenrirm"
+            ]
+        }
+    },
+    {
+        "geometry": {
+            "classroomId": "kara",
             "studentsId": [
                 0,
                 "fenrirm"

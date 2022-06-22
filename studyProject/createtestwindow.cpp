@@ -45,6 +45,7 @@ bool createTestWindow::checkUnic(const QString &path,QString NametoCheck)
 void createTestWindow::writeToFile(QString& path,  createTestWindow* testwindow,  std::vector<AbsTask*>& questions)
 {
     QJsonObject obj;
+    QJsonObject grades;
     bool unic = checkUnic(path,ui->testName->text());
     obj.insert("teacheID", teacherId);
     obj.insert("clasroomName",classroomName);
@@ -52,6 +53,7 @@ void createTestWindow::writeToFile(QString& path,  createTestWindow* testwindow,
     {
         QJsonObject test1;
         test1.insert("questionText",questions[i]->getTestText());
+        test1.insert("studentsGrades", grades);
         QJsonArray answers;
         answers.push_back(questions[i]->getAnswer(0));
         answers.push_back(questions[i]->getAnswer(1));
@@ -61,7 +63,6 @@ void createTestWindow::writeToFile(QString& path,  createTestWindow* testwindow,
         test1.insert("rightanswer", questions[i]->getCorrect());
         obj.insert("question"+QString::number(i), test1);
     }
-    qDebug()<<questions.size();
     QJsonObject testobj;
     testobj.insert(ui->testName->text(), obj);
 
@@ -80,7 +81,7 @@ void createTestWindow::writeToFile(QString& path,  createTestWindow* testwindow,
            if(file.open(QIODevice::WriteOnly))
            {
                file.write(doc2.toJson());
-               QMessageBox::about(testwindow,"","You have succesfully signed up!");
+               QMessageBox::about(testwindow,"","You have succesfully created the test!");
                file.close();
            }
            else
@@ -89,7 +90,7 @@ void createTestWindow::writeToFile(QString& path,  createTestWindow* testwindow,
            }
        }else
        {
-           QMessageBox::critical(testwindow,"","The user with the same id is already exists!");
+           QMessageBox::critical(testwindow,"","The test with the same name is already exist!");
        }
     }
 }
@@ -158,7 +159,7 @@ void createTestWindow::on_createTest_clicked()
     test12->setAnswers(ui->answer12_1->text(),ui->answer12_2->text(),ui->answer12_3->text(),ui->answer12_4->text());
     test12->setCorrect(ui->rightanswer12->text());
     questions.push_back(test12);
-    QString path = "D:/Study/Term 2/OOOP/project/study_project/studyProject/tests.json";
+    QString path = "D:/oop/Qt/studyProject/tests.json";
     writeToFile(path, this, questions);
     this->close();
 
