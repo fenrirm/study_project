@@ -160,29 +160,39 @@ void secondwindow::on_DoTask_clicked()
 void secondwindow::on_showGrades_clicked()
 {
     QFile file("D:/oop/Qt/studyProject/tests.json");
-    //QList<QWidget *> widgets = ui->verticalWidget_3->findChildren<QWidget *>();
     if(file.open(QIODevice::ReadOnly))
     {
         QByteArray bytes = file.readAll();
         file.close();
         QJsonDocument doc (QJsonDocument::fromJson(bytes));
         QJsonArray arr= doc.array();
-
         foreach(const QJsonValue& value, arr)
         {
-
             QJsonObject obj = value.toObject();
-            qDebug()<<obj[obj.keys()[0]].toObject()["clasroomName"].toString();
-            qDebug()<<ui->ClassNameToShow->text();
-
-
                 if((obj[obj.keys()[0]].toObject()["studentsGrades"].toObject().contains(ui->id->text())))
                 {
-
                 QLabel::QWidget* label= new QLabel(obj.keys()[0]+"-"+obj[obj.keys()[0]].toObject()["studentsGrades"].toObject()[ui->id->text()].toString());
                 ui->gradesLayout->addWidget(label);
                 label->show();
-                qDebug()<<obj.keys()[0]+" "+obj[obj.keys()[0]].toObject()["studentsGrades"].toObject()[ui->id->text()].toString();
+                }
+
+        }
+    }
+     QFile f("D:/oop/Qt/studyProject/opentasks.json");
+    if(f.open(QIODevice::ReadOnly))
+    {
+        QByteArray bytes = f.readAll();
+        f.close();
+        QJsonDocument doc (QJsonDocument::fromJson(bytes));
+        QJsonArray arr= doc.array();
+        foreach(const QJsonValue& value, arr)
+        {
+            QJsonObject obj = value.toObject();
+                if((obj[obj.keys()[0]].toObject()["studentsGrades"].toObject().contains(ui->id->text())))
+                {
+                QLabel::QWidget* label= new QLabel(obj.keys()[0]+"-"+obj[obj.keys()[0]].toObject()["studentsGrades"].toObject()[ui->id->text()].toString());
+                ui->gradesLayout->addWidget(label);
+                label->show();
                 }
 
         }

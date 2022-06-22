@@ -117,8 +117,41 @@ void OpenTaskAnswerWindow::on_endOpenTask_clicked()
         mark++;
     }
     QString mark_str = QString::number(mark);
-
+    QFile f("D:/oop/Qt/studyProject/opentasks.json");
     QMessageBox::about(this,"MARK", mark_str);
+    if(f.open(QIODevice::ReadOnly))
+    {
+        QByteArray bytes = f.readAll();
+        f.close();
+        QMessageBox::about(this,"MARK", mark_str);
+        QJsonObject obj;
+        QJsonDocument doc (QJsonDocument::fromJson(bytes));
+        QJsonArray arr = doc.array();
+        for(int i=0; i<arr.size(); i++)
+        {
+            QJsonObject obj = arr[i].toObject();
+            if(obj.keys()[0]==ui->opentaskName->text())
+            {
+                QJsonObject grades = obj[obj.keys()[0]].toObject()["studentsGrades"].toObject();
+                grades.insert(studentId, mark_str);
+                QJsonObject obj3 = obj[obj.keys()[0]].toObject();
+                obj3["studentsGrades"] = grades;
+                obj[obj.keys()[0]]=obj3;
+                arr[i]=obj;
+                break;
+            }
+        }
+        QJsonDocument doc2(arr);
+        if(f.open(QIODevice::WriteOnly))
+       {
+            f.write(doc2.toJson());
+            f.close();
+        }
+        else
+        {
+            QMessageBox::critical(this,"","file opened failed: ");
+        }
+    }
     this->close();
 }
 

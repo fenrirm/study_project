@@ -16,5 +16,13 @@
                 "fenrirm"
             ]
         }
+    },
+    {
+        "oop": {
+            "classroomId": "kara",
+            "studentsId": [
+                0
+            ]
+        }
     }
 ]

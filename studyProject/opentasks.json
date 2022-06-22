@@ -3,12 +3,12 @@
         "opentask1": {
             "clasroomName": "geometry",
             "question0": {
-                "questionText": "ffefe",
-                "rightanswer": "fefe"
+                "questionText": "1. Question1",
+                "rightanswer": "1. Question1"
             },
             "question1": {
-                "questionText": "fe",
-                "rightanswer": "fef"
+                "questionText": "",
+                "rightanswer": ""
             },
             "question10": {
                 "questionText": "",
@@ -19,11 +19,11 @@
                 "rightanswer": ""
             },
             "question2": {
-                "questionText": "efewe",
-                "rightanswer": "beg"
+                "questionText": "",
+                "rightanswer": ""
             },
             "question3": {
-                "questionText": "refr",
+                "questionText": "",
                 "rightanswer": ""
             },
             "question4": {
@@ -49,6 +49,9 @@
             "question9": {
                 "questionText": "",
                 "rightanswer": ""
+            },
+            "studentsGrades": {
+                "fenrirm": "8"
             },
             "teacheID": "kara"
         }

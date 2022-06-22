@@ -9,147 +9,22 @@
                     "ans2",
                     "ans2"
                 ],
-                "questionText": "question1",
-                "rightanswer": "ans2"
+                "questionText": "1. Question1",
+                "rightanswer": "ans3",
+                "studentsGrades": {
+                }
             },
             "question1": {
                 "answers": [
-                    "ans1",
-                    "ans2",
-                    "ans3",
-                    "ans4"
+                    "1. Question1",
+                    "1. Question1",
+                    "1. Question1",
+                    "1. Question1"
                 ],
-                "questionText": "question1",
-                "rightanswer": "ans4"
-            },
-            "question10": {
-                "answers": [
-                    "ans1",
-                    "ans2",
-                    "ans3",
-                    "ans4"
-                ],
-                "questionText": "question1",
-                "rightanswer": "ans1"
-            },
-            "question11": {
-                "answers": [
-                    "ans1",
-                    "ans2",
-                    "ans3",
-                    "ans4"
-                ],
-                "questionText": "question1",
-                "rightanswer": ""
-            },
-            "question2": {
-                "answers": [
-                    "ans1",
-                    "ans2",
-                    "ans3",
-                    "ans4"
-                ],
-                "questionText": "question1",
-                "rightanswer": "ans1"
-            },
-            "question3": {
-                "answers": [
-                    "ans1",
-                    "ans2",
-                    "ans3",
-                    "ans4"
-                ],
-                "questionText": "question1",
-                "rightanswer": "ans4"
-            },
-            "question4": {
-                "answers": [
-                    "ans1",
-                    "ans2",
-                    "ans3",
-                    "ans4"
-                ],
-                "questionText": "question1",
-                "rightanswer": "ans3"
-            },
-            "question5": {
-                "answers": [
-                    "ans1",
-                    "ans2",
-                    "ans3",
-                    "ans4"
-                ],
-                "questionText": "question1",
-                "rightanswer": "ans2"
-            },
-            "question6": {
-                "answers": [
-                    "ans1",
-                    "ans2",
-                    "ans3",
-                    "ans4"
-                ],
-                "questionText": "question1",
-                "rightanswer": "ans3"
-            },
-            "question7": {
-                "answers": [
-                    "ans1",
-                    "ans2",
-                    "ans3",
-                    "ans4"
-                ],
-                "questionText": "question1",
-                "rightanswer": "ans3"
-            },
-            "question8": {
-                "answers": [
-                    "ans1",
-                    "ans2",
-                    "ans3",
-                    "ans4"
-                ],
-                "questionText": "question1",
-                "rightanswer": "ans4"
-            },
-            "question9": {
-                "answers": [
-                    "ans1",
-                    "ans2",
-                    "ans3",
-                    "ans4"
-                ],
-                "questionText": "question1",
-                "rightanswer": "ans2"
-            },
-            "studentsGrades": {
-                "fenrirm": "2"
-            },
-            "teacheID": "kara"
-        }
-    },
-    {
-        "test2": {
-            "clasroomName": "algebra",
-            "question0": {
-                "answers": [
-                    "",
-                    "",
-                    "",
-                    ""
-                ],
-                "questionText": "question1",
-                "rightanswer": "question1"
-            },
-            "question1": {
-                "answers": [
-                    "",
-                    "",
-                    "",
-                    ""
-                ],
-                "questionText": "",
-                "rightanswer": ""
+                "questionText": "1. Question1",
+                "rightanswer": "1. Question1",
+                "studentsGrades": {
+                }
             },
             "question10": {
                 "answers": [
@@ -159,7 +34,9 @@
                     ""
                 ],
                 "questionText": "",
-                "rightanswer": ""
+                "rightanswer": "",
+                "studentsGrades": {
+                }
             },
             "question11": {
                 "answers": [
@@ -169,57 +46,69 @@
                     ""
                 ],
                 "questionText": "",
-                "rightanswer": ""
+                "rightanswer": "",
+                "studentsGrades": {
+                }
             },
             "question2": {
                 "answers": [
-                    "",
-                    "",
-                    "",
-                    ""
+                    "1. Question1",
+                    "1. Question1",
+                    "1. Question1",
+                    "1. Question1"
                 ],
-                "questionText": "",
-                "rightanswer": ""
+                "questionText": "1. Question1",
+                "rightanswer": "1. Question1",
+                "studentsGrades": {
+                }
             },
             "question3": {
                 "answers": [
-                    "",
-                    "",
-                    "",
-                    ""
+                    "1. Question1",
+                    "1. Question1",
+                    "1. Question1",
+                    "1. Question1"
                 ],
-                "questionText": "",
-                "rightanswer": ""
+                "questionText": "1. Question1",
+                "rightanswer": "1. Question1",
+                "studentsGrades": {
+                }
             },
             "question4": {
                 "answers": [
-                    "",
-                    "",
-                    "",
-                    ""
+                    "1. Question1",
+                    "1. Question1",
+                    "1. Question1",
+                    "1. Question1"
                 ],
-                "questionText": "",
-                "rightanswer": ""
+                "questionText": "1. Question1",
+                "rightanswer": "1. Question1",
+                "studentsGrades": {
+                }
             },
             "question5": {
                 "answers": [
-                    "",
-                    "",
-                    "",
-                    ""
+                    "1. Question1",
+                    "1. Question1",
+                    "1. Question1",
+                    "1. Question1"
                 ],
-                "questionText": "",
-                "rightanswer": ""
+                "questionText": "1. Question1",
+                "rightanswer": "1. Question1",
+                "studentsGrades": {
+                }
             },
             "question6": {
                 "answers": [
-                    "",
-                    "",
-                    "",
+                    "1. Question1",
+                    "1. Question1",
+                    "1. Question1",
                     ""
                 ],
-                "questionText": "",
-                "rightanswer": ""
+                "questionText": "1. Question1",
+                "rightanswer": "",
+                "studentsGrades": {
+                }
             },
             "question7": {
                 "answers": [
@@ -229,7 +118,9 @@
                     ""
                 ],
                 "questionText": "",
-                "rightanswer": ""
+                "rightanswer": "",
+                "studentsGrades": {
+                }
             },
             "question8": {
                 "answers": [
@@ -239,7 +130,9 @@
                     ""
                 ],
                 "questionText": "",
-                "rightanswer": ""
+                "rightanswer": "",
+                "studentsGrades": {
+                }
             },
             "question9": {
                 "answers": [
@@ -249,10 +142,12 @@
                     ""
                 ],
                 "questionText": "",
-                "rightanswer": ""
+                "rightanswer": "",
+                "studentsGrades": {
+                }
             },
             "studentsGrades": {
-                "fenrirm": "11"
+                "fenrirm": "8"
             },
             "teacheID": "kara"
         }

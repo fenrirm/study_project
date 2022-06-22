@@ -21,7 +21,7 @@ createanswerwindow::createanswerwindow(QString nameOfTask, QWidget *parent) :
         foreach(const QJsonValue& value, arr)
         {
             QJsonObject obj = value.toObject();
-            qDebug()<<obj.keys()[0]<<" == "<<nameOfTask;
+
             if(obj.keys()[0] == nameOfTask){
                 ui->taskName->setText(nameOfTask);
 

@@ -30,12 +30,8 @@ set(PROJECT_SOURCES
         teacherwindow.ui
         classroom.cpp
         classroom.h
-        student.cpp
-        student.h
         userfile.cpp
         userfile.h
-        teacher.cpp
-        teacher.h
         classroomfile.cpp
         classroomfile.h
         fileclass.h

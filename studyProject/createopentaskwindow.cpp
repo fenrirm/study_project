@@ -46,6 +46,7 @@ bool createOpenTaskWindow::checkUnic(const QString &path,QString NametoCheck)
 void createOpenTaskWindow::writeToFile(QString& path,  createOpenTaskWindow* testwindow,  std::vector<AbsTask*>& questions)
 {
     QJsonObject obj;
+    QJsonObject grades;
     bool unic = checkUnic(path,ui->openTaskName->text());
     obj.insert("teacheID", teacherId);
     obj.insert("clasroomName",classroomName);
@@ -54,6 +55,7 @@ void createOpenTaskWindow::writeToFile(QString& path,  createOpenTaskWindow* tes
         QJsonObject opentask1;
         opentask1.insert("questionText",questions[i]->getTestText());
         opentask1.insert("rightanswer", questions[i]->getCorrect());
+        opentask1.insert("studentsGrades", grades);
         obj.insert("question"+QString::number(i),  opentask1);
     }
 
